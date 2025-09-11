@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-research-engineering/perceptron-research-example" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">The Perceptron Research Journey: A Complete Historical Example • Average Joes Lab</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://averagejoeslab.com/img/ajlabs-logo-light.png"><meta data-rh="true" name="twitter:image" content="https://averagejoeslab.com/img/ajlabs-logo-light.png"><meta data-rh="true" property="og:url" content="https://averagejoeslab.com/docs/research-engineering/perceptron-research-example"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="The Perceptron Research Journey: A Complete Historical Example • Average Joes Lab"><meta data-rh="true" name="description" content="Now let&#x27;s put the research cycle into action with a real historical case that changed the world. We&#x27;re going to step into the shoes of Frank Rosenblatt in 1958 - a 31-year-old psychologist working at Cornell Aeronautical Laboratory who was about to make a breakthrough that would launch the field of machine learning."><meta data-rh="true" property="og:description" content="Now let&#x27;s put the research cycle into action with a real historical case that changed the world. We&#x27;re going to step into the shoes of Frank Rosenblatt in 1958 - a 31-year-old psychologist working at Cornell Aeronautical Laboratory who was about to make a breakthrough that would launch the field of machine learning."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://averagejoeslab.com/docs/research-engineering/perceptron-research-example"><link data-rh="true" rel="alternate" href="https://averagejoeslab.com/docs/research-engineering/perceptron-research-example" hreflang="en"><link data-rh="true" rel="alternate" href="https://averagejoeslab.com/docs/research-engineering/perceptron-research-example" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"The Perceptron Research Journey: A Complete Historical Example","item":"https://averagejoeslab.com/docs/research-engineering/perceptron-research-example"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Average Joes Lab RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Average Joes Lab Atom Feed">
+
+
+
+
+<script src="/js/blogSidebarFix.js" async></script><link rel="stylesheet" href="/assets/css/styles.f9a79fea.css">
+<script src="/assets/js/runtime~main.07453e40.js" defer="defer"></script>
+<script src="/assets/js/main.89627151.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/ajlabs-logo-light.png"><link rel="preload" as="image" href="/img/ajlabs-logo-dark.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/ajlabs-logo-light.png" alt="Average Joes Lab Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/ajlabs-logo-dark.png" alt="Average Joes Lab Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Average Joes Lab</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/research-engineering/getting-started">Learning Path</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Research</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/internal-papers">Internal Papers</a></li><li><a class="dropdown__link" href="/external-papers">External Papers</a></li></ul></div><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://discord.gg/7gzZMAPuGr" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/averagejoeslab" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/foundations/getting-started">foundations</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/research-engineering/getting-started">research-engineering</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/research-engineering/getting-started">Getting Started with Research Engineering</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/research-engineering/research-process">The Universal Research Process</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/research-engineering/perceptron-research-example">The Perceptron Research Journey: A Complete Historical Example</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">research-engineering</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">The Perceptron Research Journey: A Complete Historical Example</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>The Perceptron Research Journey: A Complete Historical Example</h1></header>
+<p>Now let&#x27;s put the research cycle into action with a real historical case that changed the world. We&#x27;re going to step into the shoes of <strong>Frank Rosenblatt in 1958</strong> - a 31-year-old psychologist working at Cornell Aeronautical Laboratory who was about to make a breakthrough that would launch the field of machine learning.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Mathematical Prerequisites</div><div class="admonitionContent_BuS1"><p>This example uses concepts from linear algebra and calculus. If you need a refresher:</p><ul>
+<li><strong>Linear Algebra</strong>: See <a href="/docs/foundations/stage-4-college-core#linear-algebra">Stage 4: Linear Algebra</a> for vectors, matrices, and linear transformations</li>
+<li><strong>Calculus</strong>: See <a href="/docs/foundations/stage-4-college-core#calculus-i">Stage 4: Calculus I</a> for derivatives and optimization</li>
+<li><strong>Programming</strong>: See <a href="/docs/foundations/stage-2-middle#python-programming">Stage 2: Python Programming</a> for implementation basics</li>
+</ul></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="setting-the-scene-the-world-of-1958">Setting the Scene: The World of 1958<a href="#setting-the-scene-the-world-of-1958" class="hash-link" aria-label="Direct link to Setting the Scene: The World of 1958" title="Direct link to Setting the Scene: The World of 1958">​</a></h2>
+<p>Picture the world in 1958: Eisenhower is president, the space race is heating up, and computers are room-sized machines with vacuum tubes that require teams of operators. The field of &quot;artificial intelligence&quot; is barely two years old - the term was coined at the Dartmouth Conference in 1956.</p>
+<p>Most computers can only do what they&#x27;re explicitly programmed to do. They&#x27;re powerful calculators, but they can&#x27;t adapt, learn, or improve their performance. The idea of a machine that could learn from experience seems like pure science fiction.</p>
+<p>You&#x27;re Frank Rosenblatt, a research psychologist fascinated by how the brain works. You&#x27;ve been thinking about neurons - those tiny biological computers that somehow enable intelligence. Unlike the rigid logic of digital computers, neurons seem to adapt and strengthen their connections based on experience.</p>
+<p><strong>What if</strong>, you wonder, <strong>we could build a machine that learns like a brain?</strong></p>
+<p>This curiosity is about to launch you on a research journey that will create the foundation for modern artificial intelligence.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-curiosity---the-spark-that-started-it-all">Step 1. Curiosity - The Spark That Started It All<a href="#step-1-curiosity---the-spark-that-started-it-all" class="hash-link" aria-label="Direct link to Step 1. Curiosity - The Spark That Started It All" title="Direct link to Step 1. Curiosity - The Spark That Started It All">​</a></h2>
+<p><strong>Your Question</strong>: <em>Can we build a machine that learns like a brain?</em></p>
+<p>As Rosenblatt, you&#x27;re struck by a fundamental puzzle. The human brain, with its 86 billion neurons, can learn to recognize faces, understand speech, and solve problems that would stump the most powerful computers of 1958. Yet each individual neuron is incredibly simple - it just receives inputs, sums them up, and either fires or doesn&#x27;t fire.</p>
+<p><strong>The Mystery</strong>: How can such simple components, working together, create something as sophisticated as learning and intelligence?</p>
+<p>You&#x27;ve been reading about cybernetics - Norbert Wiener&#x27;s idea that feedback and control systems could explain both biological and artificial systems. You&#x27;ve studied the recent work on artificial neurons by McCulloch and Pitts (1943), but their model neurons are fixed - they can&#x27;t learn or adapt.</p>
+<p><strong>The Gap You Notice</strong>: All existing &quot;artificial neurons&quot; are static. They can compute logical functions, but they can&#x27;t improve their performance based on experience. Real neurons, however, seem to strengthen their connections when they&#x27;re repeatedly activated together.</p>
+<p><strong>Your Insight</strong>: What if we could create an artificial neuron that adjusts its connections based on whether its predictions are right or wrong? What if we could build a machine that learns from its mistakes?</p>
+<p>This isn&#x27;t just idle curiosity - you can see practical applications. The military needs better pattern recognition systems. Businesses want machines that can sort mail or recognize handwriting. The potential is enormous, but first, you need to prove the concept works.</p>
+<p><strong>Your Focused Research Question</strong>: &quot;Can we create a simple artificial neuron that learns to recognize patterns by adjusting its connections based on feedback?&quot;</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-literature-review---standing-on-the-shoulders-of-giants">Step 2. Literature Review - Standing on the Shoulders of Giants<a href="#step-2-literature-review---standing-on-the-shoulders-of-giants" class="hash-link" aria-label="Direct link to Step 2. Literature Review - Standing on the Shoulders of Giants" title="Direct link to Step 2. Literature Review - Standing on the Shoulders of Giants">​</a></h2>
+<p>As Rosenblatt, you dive deep into the existing literature, trying to understand what&#x27;s already known about artificial neurons and learning. This isn&#x27;t just casual reading - you&#x27;re systematically mapping the landscape of knowledge to find where you can make a contribution.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-papers-you-study"><strong>Key Papers You Study:</strong><a href="#key-papers-you-study" class="hash-link" aria-label="Direct link to key-papers-you-study" title="Direct link to key-papers-you-study">​</a></h3>
+<p><strong>McCulloch &amp; Pitts (1943): &quot;A Logical Calculus of the Ideas Immanent in Nervous Activity&quot;</strong></p>
+<ul>
+<li><strong>What they did</strong>: Created the first mathematical model of artificial neurons</li>
+<li><strong>Their insight</strong>: Neurons can be modeled as simple threshold logic units - they sum their inputs and fire if the total exceeds a threshold</li>
+<li><strong>Their contribution</strong>: Showed that networks of these artificial neurons could compute any logical function</li>
+<li><strong>The limitation you notice</strong>: Their neurons are completely fixed. The weights (connection strengths) are set by the designer and never change. There&#x27;s no learning mechanism.</li>
+</ul>
+<p><strong>Donald Hebb (1949): &quot;The Organization of Behavior&quot;</strong></p>
+<ul>
+<li><strong>What he proposed</strong>: &quot;Neurons that fire together, wire together&quot; - when two neurons are repeatedly active at the same time, the connection between them should strengthen</li>
+<li><strong>His insight</strong>: Learning might happen through changes in synaptic strength, not through changing the neurons themselves</li>
+<li><strong>Why this excites you</strong>: This suggests a mechanism for learning! If connections can strengthen based on activity patterns, maybe artificial neurons could learn too.</li>
+</ul>
+<p><strong>Norbert Wiener (1948): &quot;Cybernetics&quot;</strong></p>
+<ul>
+<li><strong>His framework</strong>: Feedback loops are fundamental to intelligent behavior - systems that can adjust their behavior based on their performance</li>
+<li><strong>The connection</strong>: Maybe learning is just a special type of feedback system</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-crucial-gap-you-identify"><strong>The Crucial Gap You Identify</strong><a href="#the-crucial-gap-you-identify" class="hash-link" aria-label="Direct link to the-crucial-gap-you-identify" title="Direct link to the-crucial-gap-you-identify">​</a></h3>
+<p>After weeks of reading, you realize the fundamental problem: <strong>Everyone is studying either fixed logical neurons OR biological learning mechanisms, but no one has combined them.</strong></p>
+<ul>
+<li><strong>McCulloch-Pitts neurons</strong>: Can compute complex functions but can&#x27;t learn</li>
+<li><strong>Hebbian learning</strong>: Describes how biological neurons might adapt but hasn&#x27;t been implemented in artificial systems</li>
+<li><strong>Existing pattern recognition</strong>: Requires hand-coding rules for every new pattern</li>
+</ul>
+<p><strong>Your Literature Review Conclusion</strong>: &quot;There exists no artificial system that can automatically learn to recognize patterns by adjusting its own parameters based on feedback.&quot;</p>
+<p>This gap becomes your opportunity. You&#x27;re not just going to build another logical circuit - you&#x27;re going to create the first artificial neuron that can learn.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-hypothesis---the-breakthrough-insight">Step 3. Hypothesis - The Breakthrough Insight<a href="#step-3-hypothesis---the-breakthrough-insight" class="hash-link" aria-label="Direct link to Step 3. Hypothesis - The Breakthrough Insight" title="Direct link to Step 3. Hypothesis - The Breakthrough Insight">​</a></h2>
+<p>Based on your literature review, you formulate a revolutionary hypothesis that combines the best insights from McCulloch-Pitts neurons and Hebbian learning:</p>
+<p><strong>Your Hypothesis</strong>: <em>&quot;If we create a computational &#x27;neuron&#x27; that takes weighted inputs, passes them through a threshold function, and systematically updates its weights based on prediction errors, then it can learn to recognize simple patterns without explicit programming.&quot;</em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="breaking-down-your-hypothesis"><strong>Breaking Down Your Hypothesis</strong><a href="#breaking-down-your-hypothesis" class="hash-link" aria-label="Direct link to breaking-down-your-hypothesis" title="Direct link to breaking-down-your-hypothesis">​</a></h3>
+<p>Let&#x27;s unpack what you&#x27;re proposing, because it&#x27;s actually quite radical for 1958:</p>
+<p><strong>&quot;Takes weighted inputs&quot;</strong>: Like McCulloch-Pitts neurons, your artificial neuron will receive multiple inputs, each multiplied by a weight that represents the strength of that connection.</p>
+<p><strong>&quot;Passes them through a threshold function&quot;</strong>: The neuron will sum all weighted inputs and fire (output 1) if the sum exceeds a threshold, otherwise stay silent (output 0).</p>
+<p><strong>&quot;Updates weights based on prediction errors&quot;</strong>: Here&#x27;s the revolutionary part - when the neuron makes a wrong prediction, it will automatically adjust its weights to reduce the chance of making the same mistake again.</p>
+<p><strong>&quot;Learn simple patterns&quot;</strong>: You&#x27;re not claiming it will achieve human-level intelligence - just that it can learn to distinguish between different simple patterns.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="why-this-hypothesis-is-bold"><strong>Why This Hypothesis is Bold</strong><a href="#why-this-hypothesis-is-bold" class="hash-link" aria-label="Direct link to why-this-hypothesis-is-bold" title="Direct link to why-this-hypothesis-is-bold">​</a></h3>
+<p>In 1958, this is an extraordinary claim. You&#x27;re proposing to create:</p>
+<ul>
+<li><strong>The first artificial system that learns from experience</strong></li>
+<li><strong>The first implementation of adaptive artificial neurons</strong></li>
+<li><strong>The first machine that improves its own performance automatically</strong></li>
+</ul>
+<p>Your colleagues are skeptical. How can a simple mathematical formula lead to learning? How can adjusting numbers in equations create intelligence? You&#x27;re about to show them.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="your-specific-predictions"><strong>Your Specific Predictions</strong><a href="#your-specific-predictions" class="hash-link" aria-label="Direct link to your-specific-predictions" title="Direct link to your-specific-predictions">​</a></h3>
+<p>You make three concrete predictions that you can test:</p>
+<ol>
+<li><strong>Learning Capability</strong>: The perceptron will be able to learn to classify patterns it has never seen before</li>
+<li><strong>Error Correction</strong>: When it makes mistakes, the weight update rule will move it toward better performance</li>
+<li><strong>Convergence</strong>: For problems it can solve, it will eventually reach perfect accuracy</li>
+</ol>
+<p>These predictions are <strong>falsifiable</strong> - clear experiments could prove them wrong. This makes them good scientific hypotheses.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-methodology---designing-the-first-learning-machine">Step 4. Methodology - Designing the First Learning Machine<a href="#step-4-methodology---designing-the-first-learning-machine" class="hash-link" aria-label="Direct link to Step 4. Methodology - Designing the First Learning Machine" title="Direct link to Step 4. Methodology - Designing the First Learning Machine">​</a></h2>
+<p>Now you need to turn your hypothesis into a concrete plan. This is where the theoretical rubber meets the experimental road. You need to specify exactly how your artificial neuron will work and how you&#x27;ll test it.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="your-experimental-design"><strong>Your Experimental Design</strong><a href="#your-experimental-design" class="hash-link" aria-label="Direct link to your-experimental-design" title="Direct link to your-experimental-design">​</a></h3>
+<p><strong>The Artificial Neuron Structure</strong>:
+You design a computational unit with:</p>
+<ul>
+<li><strong>Multiple inputs</strong> (x₁, x₂, x₃, ...) representing different features of a pattern</li>
+<li><strong>Adjustable weights</strong> (w₁, w₂, w₃, ...) representing connection strengths</li>
+<li><strong>A threshold function</strong> that outputs 1 if the weighted sum exceeds a threshold, 0 otherwise</li>
+<li><strong>A learning rule</strong> that modifies weights when predictions are wrong</li>
+</ul>
+<p><strong>The Mathematical Foundation</strong>:
+Your perceptron will compute: <strong>output = step_function(w₁x₁ + w₂x₂ + ... + wₙxₙ - θ)</strong></p>
+<p>Where θ (theta) is the threshold value.</p>
+<p><strong>The Learning Algorithm</strong>:
+When the perceptron makes an error, you&#x27;ll update the weights using this rule:</p>
+<ul>
+<li><strong>If it should have output 1 but output 0</strong>: Increase weights for active inputs</li>
+<li><strong>If it should have output 0 but output 1</strong>: Decrease weights for active inputs</li>
+<li><strong>If it&#x27;s correct</strong>: Don&#x27;t change anything</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="choosing-your-test-problems"><strong>Choosing Your Test Problems</strong><a href="#choosing-your-test-problems" class="hash-link" aria-label="Direct link to choosing-your-test-problems" title="Direct link to choosing-your-test-problems">​</a></h3>
+<p>You decide to start with the simplest possible patterns - logical functions that any intelligent system should be able to learn:</p>
+<p><strong>AND Function</strong>: Output 1 only when both inputs are 1</p>
+<ul>
+<li>(0,0) → 0, (0,1) → 0, (1,0) → 0, (1,1) → 1</li>
+</ul>
+<p><strong>OR Function</strong>: Output 1 when either input is 1</p>
+<ul>
+<li>(0,0) → 0, (0,1) → 1, (1,0) → 1, (1,1) → 1</li>
+</ul>
+<p><strong>Why These Problems?</strong>: They&#x27;re simple enough to understand completely, but they require the machine to learn a general rule from specific examples. If your perceptron can master these, it proves the learning principle works.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="your-experimental-protocol"><strong>Your Experimental Protocol</strong><a href="#your-experimental-protocol" class="hash-link" aria-label="Direct link to your-experimental-protocol" title="Direct link to your-experimental-protocol">​</a></h3>
+<ol>
+<li><strong>Initialize</strong>: Start with small random weights</li>
+<li><strong>Present patterns</strong>: Show the perceptron input-output pairs</li>
+<li><strong>Record performance</strong>: Track how many it gets right</li>
+<li><strong>Apply learning rule</strong>: Update weights after each error</li>
+<li><strong>Repeat</strong>: Continue until it gets all patterns correct or you reach a maximum number of trials</li>
+<li><strong>Analyze</strong>: Study how the weights changed and whether learning occurred</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="success-criteria"><strong>Success Criteria</strong><a href="#success-criteria" class="hash-link" aria-label="Direct link to success-criteria" title="Direct link to success-criteria">​</a></h3>
+<p>You define clear success metrics:</p>
+<ul>
+<li><strong>Learning</strong>: The perceptron should improve its performance over time</li>
+<li><strong>Convergence</strong>: It should eventually achieve 100% accuracy on the training patterns</li>
+<li><strong>Generalization</strong>: It should maintain performance on patterns it learned earlier</li>
+</ul>
+<p>This methodology is revolutionary because it&#x27;s <strong>the first systematic approach to machine learning</strong>. You&#x27;re not just building a clever logical circuit - you&#x27;re creating a scientific framework for studying artificial learning systems.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-experimentation---the-moment-of-truth">Step 5. Experimentation - The Moment of Truth<a href="#step-5-experimentation---the-moment-of-truth" class="hash-link" aria-label="Direct link to Step 5. Experimentation - The Moment of Truth" title="Direct link to Step 5. Experimentation - The Moment of Truth">​</a></h2>
+<p>It&#x27;s time to build and test your learning machine. You&#x27;re working with the Cornell Aeronautical Laboratory&#x27;s computer - a room-sized behemoth that requires punch cards for input and can perform maybe a few thousand operations per second. Programming means writing in assembly language or early FORTRAN. Every calculation is precious.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="building-the-perceptron"><strong>Building the Perceptron</strong><a href="#building-the-perceptron" class="hash-link" aria-label="Direct link to building-the-perceptron" title="Direct link to building-the-perceptron">​</a></h3>
+<p>You implement your design as a computer program:</p>
+<p><strong>The Core Algorithm</strong>:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">y = f(Σ wᵢxᵢ − θ)</span><br></span></code></pre></div></div>
+<p>Where:</p>
+<ul>
+<li><strong>y</strong> is the output (0 or 1)</li>
+<li><strong>f</strong> is the step function (0 if input &lt; 0, 1 if input ≥ 0)</li>
+<li><strong>wᵢ</strong> are the weights (initially random, small values)</li>
+<li><strong>xᵢ</strong> are the inputs (0 or 1 for your logical functions)</li>
+<li><strong>θ</strong> is the threshold (you set this to 0 for simplicity)</li>
+</ul>
+<p><strong>The Learning Rule</strong>:
+When the perceptron makes an error:</p>
+<ul>
+<li><strong>w_new = w_old + η × (target - output) × input</strong></li>
+</ul>
+<p>Where η (eta) is the learning rate - how big steps to take when adjusting weights.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="your-first-experiments"><strong>Your First Experiments</strong><a href="#your-first-experiments" class="hash-link" aria-label="Direct link to your-first-experiments" title="Direct link to your-first-experiments">​</a></h3>
+<p><strong>Test 1: The AND Function</strong>
+You present the four possible input combinations repeatedly:</p>
+<ul>
+<li>Day 1: Random performance (about 50% correct)</li>
+<li>Day 2: Starting to improve (65% correct)</li>
+<li>Day 3: Nearly perfect (95% correct)</li>
+<li>Day 4: <strong>Perfect performance!</strong> (100% correct)</li>
+</ul>
+<p><strong>The magic moment</strong>: You watch the weights evolve. Initially random, they gradually adjust until the perceptron has learned the AND function. It&#x27;s working! You&#x27;ve created the first machine that learns from experience.</p>
+<p><strong>Test 2: The OR Function</strong>
+Emboldened by success, you reset the weights and train on OR:</p>
+<ul>
+<li>Similar pattern: random start, gradual improvement, eventual mastery</li>
+<li>The perceptron learns OR just as successfully as AND</li>
+<li><strong>Breakthrough confirmed</strong>: Your learning algorithm is general, not specific to one problem</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-shocking-discovery"><strong>The Shocking Discovery</strong><a href="#the-shocking-discovery" class="hash-link" aria-label="Direct link to the-shocking-discovery" title="Direct link to the-shocking-discovery">​</a></h3>
+<p>Excited by these successes, you decide to test a slightly more complex function:</p>
+<p><strong>XOR (Exclusive OR)</strong>: Output 1 when inputs are different</p>
+<ul>
+<li>(0,0) → 0, (0,1) → 1, (1,0) → 1, (1,1) → 0</li>
+</ul>
+<p><strong>What Happens</strong>:</p>
+<ul>
+<li>Day 1: Random performance (50% correct)</li>
+<li>Day 2: Still random (50% correct)</li>
+<li>Day 3: Still random (50% correct)</li>
+<li>Day 10: Still random...</li>
+<li>Day 100: <strong>Still random performance</strong></li>
+</ul>
+<p><strong>The Devastating Realization</strong>: Your perceptron cannot learn XOR. No matter how long you train it, no matter how you adjust the learning rate, it never improves beyond random guessing.</p>
+<p>This is puzzling and deeply concerning. XOR seems like such a simple function - humans can learn it instantly. Why can&#x27;t your learning machine master it?</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="your-experimental-log"><strong>Your Experimental Log</strong><a href="#your-experimental-log" class="hash-link" aria-label="Direct link to your-experimental-log" title="Direct link to your-experimental-log">​</a></h3>
+<p>You meticulously document everything:</p>
+<ul>
+<li><strong>Successful cases</strong>: AND, OR (linearly separable functions)</li>
+<li><strong>Failure case</strong>: XOR (non-linearly separable function)</li>
+<li><strong>Learning curves</strong>: How performance changed over time</li>
+<li><strong>Weight evolution</strong>: How the connection strengths adapted</li>
+<li><strong>Convergence times</strong>: How long learning took for successful cases</li>
+</ul>
+<p><strong>The Pattern You Notice</strong>: The perceptron can learn any function where you can draw a straight line to separate the two classes. But for XOR, no straight line works - you need a curved boundary.</p>
+<p>This observation will prove to be one of the most important limitations in the history of AI.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-6-analysis---making-sense-of-success-and-failure">Step 6. Analysis - Making Sense of Success and Failure<a href="#step-6-analysis---making-sense-of-success-and-failure" class="hash-link" aria-label="Direct link to Step 6. Analysis - Making Sense of Success and Failure" title="Direct link to Step 6. Analysis - Making Sense of Success and Failure">​</a></h2>
+<p>You sit in your office at Cornell, staring at pages of experimental results. The data tells a fascinating and troubling story that will shape the future of artificial intelligence.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-breakthrough-learning-is-possible"><strong>The Breakthrough: Learning is Possible</strong><a href="#the-breakthrough-learning-is-possible" class="hash-link" aria-label="Direct link to the-breakthrough-learning-is-possible" title="Direct link to the-breakthrough-learning-is-possible">​</a></h3>
+<p><strong>What You&#x27;ve Proven</strong>: For the first time in history, you&#x27;ve demonstrated that machines can learn from experience. Your perceptron isn&#x27;t just executing pre-programmed instructions - it&#x27;s actually adapting its behavior based on feedback.</p>
+<p><strong>The Evidence</strong>:</p>
+<ul>
+<li><strong>AND Function</strong>: Learned in 27 iterations, achieved 100% accuracy</li>
+<li><strong>OR Function</strong>: Learned in 31 iterations, achieved 100% accuracy</li>
+<li><strong>Weight Evolution</strong>: Systematic progression from random to optimal values</li>
+<li><strong>Convergence</strong>: Mathematical proof that learning will eventually succeed for these problems</li>
+</ul>
+<p><strong>Historical Significance</strong>: You&#x27;ve just created the foundation of machine learning. Every neural network, every deep learning system, every AI that learns from data traces its lineage back to this moment.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-puzzling-limitation"><strong>The Puzzling Limitation</strong><a href="#the-puzzling-limitation" class="hash-link" aria-label="Direct link to the-puzzling-limitation" title="Direct link to the-puzzling-limitation">​</a></h3>
+<p><strong>What Confounds You</strong>: XOR should be simple. It&#x27;s just &quot;output 1 when the inputs are different.&quot; A child can learn this rule in minutes. Yet your learning machine - which masters AND and OR effortlessly - cannot learn XOR no matter how long you train it.</p>
+<p><strong>Your Initial Theories</strong>:</p>
+<ol>
+<li><strong>Maybe the learning rate is wrong?</strong> You test rates from 0.01 to 1.0 - no improvement</li>
+<li><strong>Maybe it needs more training time?</strong> You run it for 10,000 iterations - still random</li>
+<li><strong>Maybe the initialization matters?</strong> You try different starting weights - same failure</li>
+</ol>
+<p><strong>The Geometric Insight</strong>: You start plotting the XOR problem on graph paper. The pattern becomes clear:</p>
+<ul>
+<li><strong>AND/OR</strong>: You can draw a straight line that separates the 0s from the 1s</li>
+<li><strong>XOR</strong>: No straight line works - the 1s and 0s are arranged in a checkerboard pattern</li>
+</ul>
+<p><strong>Your Conclusion</strong>: The perceptron can only learn <strong>linearly separable</strong> functions - problems where a straight line (or hyperplane in higher dimensions) can separate the classes.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-emotional-rollercoaster"><strong>The Emotional Rollercoaster</strong><a href="#the-emotional-rollercoaster" class="hash-link" aria-label="Direct link to the-emotional-rollercoaster" title="Direct link to the-emotional-rollercoaster">​</a></h3>
+<p>As Rosenblatt, you experience the full spectrum of research emotions:</p>
+<p><strong>Elation</strong>: You&#x27;ve achieved something unprecedented - a learning machine!
+<strong>Frustration</strong>: Why can&#x27;t it learn something as simple as XOR?
+<strong>Curiosity</strong>: What is it about XOR that makes it impossible?
+<strong>Determination</strong>: There must be a way to overcome this limitation.</p>
+<p><strong>The Research Mindset</strong>: Instead of seeing the XOR failure as a defeat, you recognize it as valuable data. Understanding why something doesn&#x27;t work is often as important as understanding why it does work.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-youve-learned-about-learning"><strong>What You&#x27;ve Learned About Learning</strong><a href="#what-youve-learned-about-learning" class="hash-link" aria-label="Direct link to what-youve-learned-about-learning" title="Direct link to what-youve-learned-about-learning">​</a></h3>
+<p>Your analysis reveals fundamental insights about artificial learning:</p>
+<ol>
+<li><strong>Learning is possible</strong>: Machines can adapt their behavior based on experience</li>
+<li><strong>Learning has limits</strong>: Not all problems are learnable by all architectures</li>
+<li><strong>Geometry matters</strong>: The structure of the problem determines what can be learned</li>
+<li><strong>Systematic methodology works</strong>: Careful experimentation reveals both capabilities and limitations</li>
+</ol>
+<p><strong>The Foundation You&#x27;ve Built</strong>: Even with its limitations, the perceptron establishes the basic framework that all future learning systems will follow:</p>
+<ul>
+<li><strong>Parameterized models</strong> (adjustable weights)</li>
+<li><strong>Error-driven learning</strong> (learn from mistakes)</li>
+<li><strong>Iterative improvement</strong> (gradual optimization)</li>
+<li><strong>Performance metrics</strong> (systematic evaluation)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-7-iteration---the-seeds-of-future-breakthroughs">Step 7. Iteration - The Seeds of Future Breakthroughs<a href="#step-7-iteration---the-seeds-of-future-breakthroughs" class="hash-link" aria-label="Direct link to Step 7. Iteration - The Seeds of Future Breakthroughs" title="Direct link to Step 7. Iteration - The Seeds of Future Breakthroughs">​</a></h2>
+<p>The XOR failure doesn&#x27;t stop you - it energizes you. This is what research is about: hitting a wall and then figuring out how to go around, over, or through it.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="your-new-hypothesis"><strong>Your New Hypothesis</strong><a href="#your-new-hypothesis" class="hash-link" aria-label="Direct link to your-new-hypothesis" title="Direct link to your-new-hypothesis">​</a></h3>
+<p><strong>The Insight</strong>: If one perceptron can only draw straight lines, what if you connected multiple perceptrons together? What if you created layers of artificial neurons?</p>
+<p><strong>Your Reasoning</strong>:</p>
+<ul>
+<li><strong>Biological brains have layers</strong>: The visual cortex, for example, has multiple layers that process information hierarchically</li>
+<li><strong>Complex boundaries</strong>: Maybe multiple straight lines could approximate a curved boundary</li>
+<li><strong>Divide and conquer</strong>: Perhaps different perceptrons could learn different parts of a complex problem</li>
+</ul>
+<p><strong>Your New Research Question</strong>: &quot;Can networks of perceptrons solve problems that single perceptrons cannot?&quot;</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-1962-proposal"><strong>The 1962 Proposal</strong><a href="#the-1962-proposal" class="hash-link" aria-label="Direct link to the-1962-proposal" title="Direct link to the-1962-proposal">​</a></h3>
+<p>Four years later, you publish &quot;Principles of Neurodynamics&quot; (1962), where you propose multi-layer perceptron networks. You theoretically show that:</p>
+<ul>
+<li><strong>Two layers can solve XOR</strong>: One layer learns intermediate features, the second combines them</li>
+<li><strong>Multiple layers increase power</strong>: More layers should enable more complex pattern recognition</li>
+<li><strong>The architecture exists</strong>: You can design the network structure</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-crushing-problem"><strong>The Crushing Problem</strong><a href="#the-crushing-problem" class="hash-link" aria-label="Direct link to the-crushing-problem" title="Direct link to the-crushing-problem">​</a></h3>
+<p>But there&#x27;s a devastating catch: <strong>You can&#x27;t figure out how to train these multi-layer networks.</strong></p>
+<p><strong>The Training Bottleneck</strong>: Your learning rule works perfectly for single perceptrons because you know exactly how to assign credit or blame - if the output is wrong, adjust the weights. But in a multi-layer network:</p>
+<ul>
+<li><strong>Which weights should you adjust?</strong> The ones in the first layer? The second layer? Both?</li>
+<li><strong>How much should you adjust them?</strong> Too much and you might destroy previously learned patterns</li>
+<li><strong>In which direction?</strong> It&#x27;s not obvious how to propagate the error backward through multiple layers</li>
+</ul>
+<p><strong>The Tragic Irony</strong>: You&#x27;ve designed the architecture that could solve XOR, but you can&#x27;t train it. The solution exists in theory but remains tantalizingly out of reach in practice.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-25-year-wait"><strong>The 25-Year Wait</strong><a href="#the-25-year-wait" class="hash-link" aria-label="Direct link to the-25-year-wait" title="Direct link to the-25-year-wait">​</a></h3>
+<p>This training problem will stump researchers for 25 years. The multi-layer perceptron architecture exists, the need is clear, but the training method remains elusive.</p>
+<p><strong>What You Don&#x27;t Know</strong>: The solution will eventually come in 1986 when Rumelhart, Hinton, and Williams develop backpropagation - a way to systematically propagate errors backward through multiple layers using the chain rule from calculus.</p>
+<p><strong>The Research Lesson</strong>: Sometimes the biggest breakthroughs aren&#x27;t new architectures or theories, but practical methods to implement existing ideas. The concept can exist decades before the implementation method is discovered.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-8-communication---sharing-the-discovery-with-the-world">Step 8. Communication - Sharing the Discovery with the World<a href="#step-8-communication---sharing-the-discovery-with-the-world" class="hash-link" aria-label="Direct link to Step 8. Communication - Sharing the Discovery with the World" title="Direct link to Step 8. Communication - Sharing the Discovery with the World">​</a></h2>
+<p>In 1958, you sit down to write what will become one of the most influential papers in the history of artificial intelligence: <em>&quot;The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain.&quot;</em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="crafting-your-paper"><strong>Crafting Your Paper</strong><a href="#crafting-your-paper" class="hash-link" aria-label="Direct link to crafting-your-paper" title="Direct link to crafting-your-paper">​</a></h3>
+<p><strong>The Challenge</strong>: How do you communicate a completely new idea? There&#x27;s no established vocabulary for &quot;machine learning&quot; - you&#x27;re literally creating the language as you write.</p>
+<p><strong>Your Paper Structure</strong>:</p>
+<p><strong>Introduction</strong>: You set the stage by explaining the biological inspiration and the gap in current technology. You make the bold claim that machines can be built to learn like brains.</p>
+<p><strong>The Model</strong>: You carefully describe the perceptron architecture - the mathematical formulation, the learning rule, the biological analogy. You include detailed diagrams showing how artificial neurons could work.</p>
+<p><strong>Experimental Results</strong>: You present your data systematically:</p>
+<ul>
+<li><strong>Successful learning curves</strong> for AND and OR functions</li>
+<li><strong>Convergence proofs</strong> showing that learning is guaranteed for linearly separable problems</li>
+<li><strong>Performance metrics</strong> demonstrating that the machine actually improves with experience</li>
+</ul>
+<p><strong>Honest Limitations</strong>: Crucially, you don&#x27;t hide the XOR failure. You acknowledge that the perceptron has limitations and cannot solve all pattern recognition problems.</p>
+<p><strong>Future Implications</strong>: You speculate about multi-layer networks and more complex learning systems, planting seeds for future research.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-bold-claims"><strong>The Bold Claims</strong><a href="#the-bold-claims" class="hash-link" aria-label="Direct link to the-bold-claims" title="Direct link to the-bold-claims">​</a></h3>
+<p>You make some remarkably prescient (and some overly optimistic) predictions:</p>
+<p><strong>What You Got Right</strong>:</p>
+<ul>
+<li>&quot;The perceptron may eventually be able to learn, make decisions, and translate languages&quot;</li>
+<li>&quot;Networks of perceptrons could solve more complex problems&quot;</li>
+<li>&quot;This represents a new approach to artificial intelligence based on learning rather than programming&quot;</li>
+</ul>
+<p><strong>What You Overestimated</strong>:</p>
+<ul>
+<li>Timeline predictions (you thought full AI was decades away, not 60+ years)</li>
+<li>Ease of scaling (multi-layer training proved much harder than anticipated)</li>
+<li>Biological equivalence (real neurons are far more complex than your model)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-scientific-integrity"><strong>The Scientific Integrity</strong><a href="#the-scientific-integrity" class="hash-link" aria-label="Direct link to the-scientific-integrity" title="Direct link to the-scientific-integrity">​</a></h3>
+<p><strong>What Makes Your Paper Great</strong>: You document both successes AND failures. You provide enough detail for others to reproduce your work. You acknowledge limitations honestly. This is exemplary scientific communication.</p>
+<p><strong>The Reproducibility</strong>: Other researchers can build their own perceptrons and verify your results. This transparency accelerates the field&#x27;s development.</p>
+<p><strong>The Vision</strong>: While acknowledging current limitations, you paint a compelling picture of what might be possible, inspiring others to tackle the unsolved problems.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-9-peer-review---the-critique-that-changed-everything">Step 9. Peer Review - The Critique That Changed Everything<a href="#step-9-peer-review---the-critique-that-changed-everything" class="hash-link" aria-label="Direct link to Step 9. Peer Review - The Critique That Changed Everything" title="Direct link to Step 9. Peer Review - The Critique That Changed Everything">​</a></h2>
+<p>Your 1958 paper creates a sensation. The press picks it up, calling it a &quot;thinking machine.&quot; The Navy funds your research. Universities start neural network programs. For a decade, the perceptron is the hottest topic in AI.</p>
+<p>But then comes 1969, and everything changes.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-minsky-papert-critique"><strong>The Minsky-Papert Critique</strong><a href="#the-minsky-papert-critique" class="hash-link" aria-label="Direct link to the-minsky-papert-critique" title="Direct link to the-minsky-papert-critique">​</a></h3>
+<p><strong>Marvin Minsky</strong> and <strong>Seymour Papert</strong> - two titans of AI at MIT - publish a devastating critique: <em>&quot;Perceptrons: An Introduction to Computational Geometry.&quot;</em> This isn&#x27;t just criticism - it&#x27;s a mathematical dissection.</p>
+<p><strong>What They Prove</strong>:
+Using rigorous mathematical analysis, they demonstrate that single-layer perceptrons have fundamental limitations:</p>
+<ul>
+<li><strong>XOR impossibility</strong>: They provide formal proof that no single perceptron can learn XOR</li>
+<li><strong>Connectivity problems</strong>: Perceptrons can&#x27;t determine if shapes are connected or disconnected</li>
+<li><strong>Parity functions</strong>: They can&#x27;t learn to detect even/odd numbers of active inputs</li>
+<li><strong>Scaling issues</strong>: Many problems require exponentially large perceptrons</li>
+</ul>
+<p><strong>The Mathematical Rigor</strong>: Unlike your experimental approach, they use pure mathematics - geometric analysis and computational theory. Their proofs are ironclad and undeniable.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-devastating-impact"><strong>The Devastating Impact</strong><a href="#the-devastating-impact" class="hash-link" aria-label="Direct link to the-devastating-impact" title="Direct link to the-devastating-impact">​</a></h3>
+<p><strong>What Happens Next</strong>:</p>
+<ul>
+<li><strong>Funding dries up</strong>: Government and military support for neural networks evaporates</li>
+<li><strong>Researchers leave the field</strong>: Many abandon neural networks for symbolic AI</li>
+<li><strong>The &quot;AI Winter&quot;</strong>: Neural network research enters a dormant period that lasts nearly two decades</li>
+<li><strong>Alternative approaches dominate</strong>: Expert systems and logic-based AI take center stage</li>
+</ul>
+<p><strong>The Irony</strong>: Minsky and Papert focus their critique on single-layer perceptrons. They acknowledge that multi-layer networks might overcome these limitations, but they dismiss them as impractical because &quot;no one has found a way to train them effectively.&quot;</p>
+<p><strong>What They Don&#x27;t Realize</strong>: The training problem they mention in passing will eventually be solved, leading to the deep learning revolution.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-research-lesson-about-peer-review"><strong>The Research Lesson About Peer Review</strong><a href="#the-research-lesson-about-peer-review" class="hash-link" aria-label="Direct link to the-research-lesson-about-peer-review" title="Direct link to the-research-lesson-about-peer-review">​</a></h3>
+<p><strong>Why This Critique Was Valuable</strong>:</p>
+<ul>
+<li><strong>Mathematical rigor</strong>: It forced the field to be more precise about capabilities and limitations</li>
+<li><strong>Honest assessment</strong>: It prevented overselling of limited technology</li>
+<li><strong>Clear research directions</strong>: It identified exactly what problems needed to be solved</li>
+</ul>
+<p><strong>The Unintended Consequence</strong>: By being so thorough in their critique, Minsky and Papert inadvertently created a roadmap for future breakthroughs. Every limitation they identified became a research challenge for the next generation.</p>
+<p><strong>Your Response</strong>: Rather than being defensive, you acknowledge the validity of their mathematical analysis. You recognize that they&#x27;ve precisely characterized the limitations you discovered experimentally. This is how science progresses - through rigorous critique and honest assessment.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-10-legacy---the-long-arc-of-scientific-progress">Step 10. Legacy - The Long Arc of Scientific Progress<a href="#step-10-legacy---the-long-arc-of-scientific-progress" class="hash-link" aria-label="Direct link to Step 10. Legacy - The Long Arc of Scientific Progress" title="Direct link to Step 10. Legacy - The Long Arc of Scientific Progress">​</a></h2>
+<p>The story of the perceptron doesn&#x27;t end with the 1969 critique. Like all great scientific ideas, it goes through cycles of enthusiasm, criticism, dormancy, and renaissance. The perceptron&#x27;s legacy unfolds over decades, ultimately vindicated in ways you could never have imagined.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-immediate-impact-1958-1969-the-first-ai-boom"><strong>The Immediate Impact (1958-1969): The First AI Boom</strong><a href="#the-immediate-impact-1958-1969-the-first-ai-boom" class="hash-link" aria-label="Direct link to the-immediate-impact-1958-1969-the-first-ai-boom" title="Direct link to the-immediate-impact-1958-1969-the-first-ai-boom">​</a></h3>
+<p><strong>The Excitement</strong>: Your paper captures the world&#x27;s imagination. The New York Times writes about &quot;thinking machines.&quot; Science fiction authors incorporate learning robots into their stories. The public believes artificial intelligence is just around the corner.</p>
+<p><strong>The Research Explosion</strong>: Universities establish neural network research groups. The military funds pattern recognition projects. Companies explore commercial applications. You become a celebrity scientist, appearing on television to demonstrate your learning machine.</p>
+<p><strong>The Practical Applications</strong>: Early perceptrons are used for:</p>
+<ul>
+<li><strong>Character recognition</strong>: Reading printed text and handwritten digits</li>
+<li><strong>Medical diagnosis</strong>: Analyzing symptoms to suggest conditions</li>
+<li><strong>Weather prediction</strong>: Learning patterns in meteorological data</li>
+<li><strong>Military applications</strong>: Automatic target recognition systems</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-dark-period-1969-1982-the-ai-winter"><strong>The Dark Period (1969-1982): The AI Winter</strong><a href="#the-dark-period-1969-1982-the-ai-winter" class="hash-link" aria-label="Direct link to the-dark-period-1969-1982-the-ai-winter" title="Direct link to the-dark-period-1969-1982-the-ai-winter">​</a></h3>
+<p><strong>The Crash</strong>: After Minsky and Papert&#x27;s critique, neural network research nearly dies. Funding disappears, researchers switch fields, and the perceptron becomes a cautionary tale about overpromising in AI.</p>
+<p><strong>What Keeps the Flame Alive</strong>: A small group of researchers continues working on neural networks:</p>
+<ul>
+<li><strong>Stephen Grossberg</strong>: Develops adaptive resonance theory</li>
+<li><strong>Kunihiko Fukushima</strong>: Creates the neocognitron (precursor to CNNs)</li>
+<li><strong>John Hopfield</strong>: Will later develop Hopfield networks (1982)</li>
+</ul>
+<p><strong>The Underground Research</strong>: These researchers, inspired by your original vision, quietly work on solving the multi-layer training problem.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-renaissance-1986-present-deep-learning-revolution"><strong>The Renaissance (1986-Present): Deep Learning Revolution</strong><a href="#the-renaissance-1986-present-deep-learning-revolution" class="hash-link" aria-label="Direct link to the-renaissance-1986-present-deep-learning-revolution" title="Direct link to the-renaissance-1986-present-deep-learning-revolution">​</a></h3>
+<p><strong>1986: The Breakthrough</strong>: Rumelhart, Hinton, and Williams solve the multi-layer training problem with backpropagation. Suddenly, neural networks can learn XOR and much more complex patterns.</p>
+<p><strong>The Vindication</strong>: Everything you predicted about multi-layer networks comes true:</p>
+<ul>
+<li><strong>XOR solved</strong>: Two-layer networks easily learn the function that stymied single perceptrons</li>
+<li><strong>Complex pattern recognition</strong>: Deep networks master image recognition, speech recognition, natural language processing</li>
+<li><strong>Learning from data</strong>: Modern AI systems learn from massive datasets, just as you envisioned</li>
+</ul>
+<p><strong>Modern Deep Learning</strong>: Today&#x27;s systems use the same fundamental principles you established:</p>
+<ul>
+<li><strong>Weighted connections</strong>: GPT models have billions of parameters, all learned through weight adjustment</li>
+<li><strong>Error-driven learning</strong>: Backpropagation is just a sophisticated version of your error correction rule</li>
+<li><strong>Layered architectures</strong>: Transformers and CNNs are elaborate multi-layer perceptrons</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-historical-perspective"><strong>The Historical Perspective</strong><a href="#the-historical-perspective" class="hash-link" aria-label="Direct link to the-historical-perspective" title="Direct link to the-historical-perspective">​</a></h3>
+<p><strong>What Your Story Teaches</strong>:</p>
+<p><strong>Research is Non-Linear</strong>: The path from your 1958 breakthrough to modern AI wasn&#x27;t straight. It included false starts, dormant periods, and unexpected breakthroughs.</p>
+<p><strong>Limitations Drive Innovation</strong>: The XOR problem you discovered became the central challenge that drove decades of research. Your &quot;failure&quot; was actually a roadmap for future success.</p>
+<p><strong>Ideas Have Lives of Their Own</strong>: Your perceptron concept survived critique, dormancy, and near-extinction to become the foundation of a trillion-dollar industry.</p>
+<p><strong>Patience and Persistence</strong>: The most important breakthroughs often take decades to fully mature. What seems impossible today might be routine tomorrow.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="your-true-legacy"><strong>Your True Legacy</strong><a href="#your-true-legacy" class="hash-link" aria-label="Direct link to your-true-legacy" title="Direct link to your-true-legacy">​</a></h3>
+<p><strong>You Didn&#x27;t Just Invent a Machine</strong>: You created a new way of thinking about intelligence, learning, and computation. You showed that:</p>
+<ul>
+<li><strong>Learning can be automated</strong>: Machines don&#x27;t need to be explicitly programmed for every task</li>
+<li><strong>Simple rules can lead to complex behavior</strong>: Your simple weight update rule enabled sophisticated pattern recognition</li>
+<li><strong>Biological inspiration works</strong>: Nature provides excellent blueprints for artificial systems</li>
+<li><strong>Systematic experimentation reveals truth</strong>: Both capabilities and limitations can be discovered through careful testing</li>
+</ul>
+<p><strong>The Modern World</strong>: Every time someone uses Google Translate, asks Siri a question, or sees a recommendation on Netflix, they&#x27;re benefiting from the learning principles you established in 1958.</p>
+<p><strong>The Research Engineering Lesson</strong>: Your journey from curiosity to breakthrough to limitation to eventual vindication perfectly demonstrates the research cycle. You didn&#x27;t just solve a problem - you created a methodology that others could follow to solve even bigger problems.</p>
+<p><strong>Frank Rosenblatt, you changed the world</strong> - not just with your invention, but with your approach to systematic, honest, reproducible research.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-this-example-teaches-modern-researchers">What This Example Teaches Modern Researchers<a href="#what-this-example-teaches-modern-researchers" class="hash-link" aria-label="Direct link to What This Example Teaches Modern Researchers" title="Direct link to What This Example Teaches Modern Researchers">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-power-of-systematic-methodology"><strong>The Power of Systematic Methodology</strong><a href="#the-power-of-systematic-methodology" class="hash-link" aria-label="Direct link to the-power-of-systematic-methodology" title="Direct link to the-power-of-systematic-methodology">​</a></h3>
+<p>Rosenblatt&#x27;s success came not from genius or luck, but from following a systematic research process:</p>
+<ol>
+<li><strong>Identified a specific gap</strong> in existing knowledge</li>
+<li><strong>Formulated testable hypotheses</strong> based on solid reasoning</li>
+<li><strong>Designed rigorous experiments</strong> with clear success criteria</li>
+<li><strong>Documented both successes and failures</strong> honestly</li>
+<li><strong>Communicated findings</strong> clearly and reproducibly</li>
+<li><strong>Accepted criticism</strong> and built on it constructively</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-apply-this-to-your-research"><strong>How to Apply This to Your Research</strong><a href="#how-to-apply-this-to-your-research" class="hash-link" aria-label="Direct link to how-to-apply-this-to-your-research" title="Direct link to how-to-apply-this-to-your-research">​</a></h3>
+<p><strong>Choose a foundational paper</strong>: Find a historically important work in your field of interest
+<strong>Follow the same process</strong>: Use Rosenblatt&#x27;s methodology as your template
+<strong>Expect limitations</strong>: Every approach has boundaries - finding them is valuable research
+<strong>Think long-term</strong>: Today&#x27;s limitations often become tomorrow&#x27;s breakthroughs
+<strong>Document everything</strong>: Your failures might inspire future successes</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-research-engineering-mindset"><strong>The Research Engineering Mindset</strong><a href="#the-research-engineering-mindset" class="hash-link" aria-label="Direct link to the-research-engineering-mindset" title="Direct link to the-research-engineering-mindset">​</a></h3>
+<p><strong>Embrace constraints</strong>: Limitations aren&#x27;t failures - they&#x27;re discoveries that guide future research
+<strong>Value negative results</strong>: What doesn&#x27;t work is often as important as what does work
+<strong>Think systematically</strong>: Follow the research process even when it leads to unexpected places
+<strong>Communicate honestly</strong>: Report both successes and failures with equal rigor
+<strong>Stay curious</strong>: Let limitations spark new questions rather than discourage further research</p>
+<hr>
+<p><strong>Ready to start your own research journey?</strong> Use the same systematic methodology that led Rosenblatt to his breakthrough. Begin with <strong><a href="/docs/research-engineering/getting-started">Getting Started</a></strong> and follow the <strong><a href="/docs/research-engineering/research-process">Research Process</a></strong> to conduct your own groundbreaking research.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/averagejoeslab/averagejoeslab/tree/main/docs/research-engineering/perceptron-research-example.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/research-engineering/research-process"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">The Universal Research Process</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#setting-the-scene-the-world-of-1958" class="table-of-contents__link toc-highlight">Setting the Scene: The World of 1958</a></li><li><a href="#step-1-curiosity---the-spark-that-started-it-all" class="table-of-contents__link toc-highlight">Step 1. Curiosity - The Spark That Started It All</a></li><li><a href="#step-2-literature-review---standing-on-the-shoulders-of-giants" class="table-of-contents__link toc-highlight">Step 2. Literature Review - Standing on the Shoulders of Giants</a><ul><li><a href="#key-papers-you-study" class="table-of-contents__link toc-highlight"><strong>Key Papers You Study:</strong></a></li><li><a href="#the-crucial-gap-you-identify" class="table-of-contents__link toc-highlight"><strong>The Crucial Gap You Identify</strong></a></li></ul></li><li><a href="#step-3-hypothesis---the-breakthrough-insight" class="table-of-contents__link toc-highlight">Step 3. Hypothesis - The Breakthrough Insight</a><ul><li><a href="#breaking-down-your-hypothesis" class="table-of-contents__link toc-highlight"><strong>Breaking Down Your Hypothesis</strong></a></li><li><a href="#why-this-hypothesis-is-bold" class="table-of-contents__link toc-highlight"><strong>Why This Hypothesis is Bold</strong></a></li><li><a href="#your-specific-predictions" class="table-of-contents__link toc-highlight"><strong>Your Specific Predictions</strong></a></li></ul></li><li><a href="#step-4-methodology---designing-the-first-learning-machine" class="table-of-contents__link toc-highlight">Step 4. Methodology - Designing the First Learning Machine</a><ul><li><a href="#your-experimental-design" class="table-of-contents__link toc-highlight"><strong>Your Experimental Design</strong></a></li><li><a href="#choosing-your-test-problems" class="table-of-contents__link toc-highlight"><strong>Choosing Your Test Problems</strong></a></li><li><a href="#your-experimental-protocol" class="table-of-contents__link toc-highlight"><strong>Your Experimental Protocol</strong></a></li><li><a href="#success-criteria" class="table-of-contents__link toc-highlight"><strong>Success Criteria</strong></a></li></ul></li><li><a href="#step-5-experimentation---the-moment-of-truth" class="table-of-contents__link toc-highlight">Step 5. Experimentation - The Moment of Truth</a><ul><li><a href="#building-the-perceptron" class="table-of-contents__link toc-highlight"><strong>Building the Perceptron</strong></a></li><li><a href="#your-first-experiments" class="table-of-contents__link toc-highlight"><strong>Your First Experiments</strong></a></li><li><a href="#the-shocking-discovery" class="table-of-contents__link toc-highlight"><strong>The Shocking Discovery</strong></a></li><li><a href="#your-experimental-log" class="table-of-contents__link toc-highlight"><strong>Your Experimental Log</strong></a></li></ul></li><li><a href="#step-6-analysis---making-sense-of-success-and-failure" class="table-of-contents__link toc-highlight">Step 6. Analysis - Making Sense of Success and Failure</a><ul><li><a href="#the-breakthrough-learning-is-possible" class="table-of-contents__link toc-highlight"><strong>The Breakthrough: Learning is Possible</strong></a></li><li><a href="#the-puzzling-limitation" class="table-of-contents__link toc-highlight"><strong>The Puzzling Limitation</strong></a></li><li><a href="#the-emotional-rollercoaster" class="table-of-contents__link toc-highlight"><strong>The Emotional Rollercoaster</strong></a></li><li><a href="#what-youve-learned-about-learning" class="table-of-contents__link toc-highlight"><strong>What You&#39;ve Learned About Learning</strong></a></li></ul></li><li><a href="#step-7-iteration---the-seeds-of-future-breakthroughs" class="table-of-contents__link toc-highlight">Step 7. Iteration - The Seeds of Future Breakthroughs</a><ul><li><a href="#your-new-hypothesis" class="table-of-contents__link toc-highlight"><strong>Your New Hypothesis</strong></a></li><li><a href="#the-1962-proposal" class="table-of-contents__link toc-highlight"><strong>The 1962 Proposal</strong></a></li><li><a href="#the-crushing-problem" class="table-of-contents__link toc-highlight"><strong>The Crushing Problem</strong></a></li><li><a href="#the-25-year-wait" class="table-of-contents__link toc-highlight"><strong>The 25-Year Wait</strong></a></li></ul></li><li><a href="#step-8-communication---sharing-the-discovery-with-the-world" class="table-of-contents__link toc-highlight">Step 8. Communication - Sharing the Discovery with the World</a><ul><li><a href="#crafting-your-paper" class="table-of-contents__link toc-highlight"><strong>Crafting Your Paper</strong></a></li><li><a href="#the-bold-claims" class="table-of-contents__link toc-highlight"><strong>The Bold Claims</strong></a></li><li><a href="#the-scientific-integrity" class="table-of-contents__link toc-highlight"><strong>The Scientific Integrity</strong></a></li></ul></li><li><a href="#step-9-peer-review---the-critique-that-changed-everything" class="table-of-contents__link toc-highlight">Step 9. Peer Review - The Critique That Changed Everything</a><ul><li><a href="#the-minsky-papert-critique" class="table-of-contents__link toc-highlight"><strong>The Minsky-Papert Critique</strong></a></li><li><a href="#the-devastating-impact" class="table-of-contents__link toc-highlight"><strong>The Devastating Impact</strong></a></li><li><a href="#the-research-lesson-about-peer-review" class="table-of-contents__link toc-highlight"><strong>The Research Lesson About Peer Review</strong></a></li></ul></li><li><a href="#step-10-legacy---the-long-arc-of-scientific-progress" class="table-of-contents__link toc-highlight">Step 10. Legacy - The Long Arc of Scientific Progress</a><ul><li><a href="#the-immediate-impact-1958-1969-the-first-ai-boom" class="table-of-contents__link toc-highlight"><strong>The Immediate Impact (1958-1969): The First AI Boom</strong></a></li><li><a href="#the-dark-period-1969-1982-the-ai-winter" class="table-of-contents__link toc-highlight"><strong>The Dark Period (1969-1982): The AI Winter</strong></a></li><li><a href="#the-renaissance-1986-present-deep-learning-revolution" class="table-of-contents__link toc-highlight"><strong>The Renaissance (1986-Present): Deep Learning Revolution</strong></a></li><li><a href="#the-historical-perspective" class="table-of-contents__link toc-highlight"><strong>The Historical Perspective</strong></a></li><li><a href="#your-true-legacy" class="table-of-contents__link toc-highlight"><strong>Your True Legacy</strong></a></li></ul></li><li><a href="#what-this-example-teaches-modern-researchers" class="table-of-contents__link toc-highlight">What This Example Teaches Modern Researchers</a><ul><li><a href="#the-power-of-systematic-methodology" class="table-of-contents__link toc-highlight"><strong>The Power of Systematic Methodology</strong></a></li><li><a href="#how-to-apply-this-to-your-research" class="table-of-contents__link toc-highlight"><strong>How to Apply This to Your Research</strong></a></li><li><a href="#the-research-engineering-mindset" class="table-of-contents__link toc-highlight"><strong>The Research Engineering Mindset</strong></a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Research</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Research Engineering Path</a></li><li class="footer__item"><a class="footer__link-item" href="/internal-papers">Internal Papers</a></li><li class="footer__item"><a class="footer__link-item" href="/external-papers">External Papers</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/7gzZMAPuGr" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/averagejoeslab" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Content</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/#story">About Us</a></li><li class="footer__item"><a class="footer__link-item" href="/#mission">Mission</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Average Joes Lab - All rights reserved.</div></div></div></footer></div>
+</body>
+</html>
