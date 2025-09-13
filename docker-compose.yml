@@ -1,38 +1,12 @@
 services:
   docusaurus:
-    build: 
-      context: .
-      dockerfile: Dockerfile
+    build: .
     container_name: averagejoeslab-dev
     ports:
       - "3000:3000"
     volumes:
-      # Mount source code for hot reload (excludes node_modules for performance)
       - .:/app
-      - /app/node_modules
+      - /app/node_modules  # Prevent overwriting node_modules
     environment:
       - NODE_ENV=development
-      - CHOKIDAR_USEPOLLING=true  # Better file watching in containers
-      - WATCHPACK_POLLING=true
-    networks:
-      - docusaurus-network
     restart: unless-stopped
-    # Security: Run with limited capabilities
-    cap_drop:
-      - ALL
-    cap_add:
-      - CHOWN
-      - SETUID
-      - SETGID
-    # Security: Read-only root filesystem with specific writable areas
-    read_only: true
-    tmpfs:
-      - /tmp
-      - /app/.docusaurus
-      - /app/build
-
-networks:
-  docusaurus-network:
-    driver: bridge
-    # Isolate container network
-    internal: false
