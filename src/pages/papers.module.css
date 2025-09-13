@@ -1,0 +1,366 @@
+/* Papers Page Styles */
+
+/* Hero Section */
+.papersHero {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 50%, #4a5568 100%);
+  color: white;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.papersHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="papers-grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23papers-grid)"/></svg>');
+  opacity: 0.3;
+}
+
+/* Using global .hero-title and .hero-subtitle classes */
+
+/* Stats Section */
+/* Using global .section-stats, .stat-card, .stat-icon, .stat-value, .stat-label classes */
+
+/* Papers Section */
+/* Using global .section-hero and .section-description classes */
+
+/* Filter Tabs */
+.filterTabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filterTab {
+  background: var(--ifm-card-background-color);
+  border: 2px solid var(--ifm-color-emphasis-200);
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  color: var(--ifm-color-content);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.filterTab:hover {
+  border-color: var(--filter-color, var(--ifm-color-primary));
+  transform: translateY(-2px);
+  box-shadow: var(--ifm-box-shadow-sm);
+}
+
+.filterTabActive {
+  background: var(--filter-color, var(--ifm-color-primary));
+  border-color: var(--filter-color, var(--ifm-color-primary));
+  color: white;
+}
+
+.filterTabActive:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ifm-box-shadow-md);
+}
+
+.filterCheckmark {
+  font-weight: bold;
+  margin-left: 0.25rem;
+}
+
+/* Controls row for sorting and other controls */
+.controlsRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Sort dropdown styling */
+.sortDropdown {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sortLabel {
+  font-weight: 500;
+  color: var(--ifm-color-content);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.sortSelect {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-color-content);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 180px;
+}
+
+.sortSelect:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.sortSelect:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px rgba(45, 55, 72, 0.1);
+}
+
+/* Dark mode styles for sort controls */
+[data-theme='dark'] .controlsRow {
+  border-top-color: #4a5568;
+  border-bottom-color: #4a5568;
+}
+
+[data-theme='dark'] .sortLabel {
+  color: #e2e8f0;
+}
+
+[data-theme='dark'] .sortSelect {
+  background-color: #374151;
+  color: #e2e8f0;
+  border-color: #4a5568;
+}
+
+[data-theme='dark'] .sortSelect:hover {
+  border-color: #63b3ed;
+}
+
+[data-theme='dark'] .sortSelect:focus {
+  border-color: #63b3ed;
+  box-shadow: 0 0 0 2px rgba(99, 179, 237, 0.2);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .controlsRow {
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .sortDropdown {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .sortSelect {
+    min-width: 200px;
+  }
+}
+
+/* Form styles removed - not used in current implementation */
+
+/* Papers Grid */
+.papersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.paperCard {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-card-border-radius);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.paperCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ifm-box-shadow-lg);
+  border-color: var(--ifm-color-primary);
+}
+
+
+
+/* Paper Header */
+.paperHeader {
+  margin-bottom: 1.5rem;
+}
+
+.paperMeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.statusBadge {
+  background: var(--ifm-color-primary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.paperDate {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.9rem;
+}
+
+.paperTags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.paperTag {
+  background: var(--ifm-color-primary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Paper Content */
+.paperContent {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.paperTitle {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-content);
+  line-height: 1.4;
+}
+
+.paperAuthors {
+  color: var(--ifm-color-content-secondary);
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.paperVenue {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.paperAbstract {
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Paper Actions */
+.paperActions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.paperActions .button {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+}
+
+.noLinksMessage {
+  color: var(--ifm-color-emphasis-600);
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+}
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.emptyStateIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.emptyState h3 {
+  margin-bottom: 1rem;
+  color: var(--ifm-color-content);
+}
+
+/* Responsive Design - Papers specific only */
+@media (max-width: 768px) {
+  .papersGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .paperCard {
+    padding: 1.5rem;
+  }
+  
+  .filterTabs {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+  
+  .filterTab {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  .paperActions {
+    flex-direction: column;
+  }
+  
+  .paperActions .button {
+    width: 100%;
+  }
+  
+  .statsSection .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .statsSection .col {
+    flex: 1;
+    min-width: 150px;
+  }
+}
+
+/* Dark theme adjustments */
+[data-theme='dark'] .papersHero {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 50%, #2d3748 100%);
+}
+
+[data-theme='dark'] .paperCard,
+[data-theme='dark'] .statCard,
+[data-theme='dark'] .ctaCard {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .filterTab {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}

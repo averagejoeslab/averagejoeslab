@@ -1,0 +1,96 @@
+name: Sync Papers from Notion
+
+on:
+  schedule:
+    # Run daily at 4 AM Central Time (9 AM UTC, accounting for DST)
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Allow manual triggering
+  push:
+    paths:
+      - '.github/workflows/sync-notion-papers.yml' # Re-run when workflow is updated
+
+permissions:
+  contents: write  # Needed to push to gh-pages branch
+  pages: read
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "papers-sync"
+  cancel-in-progress: false
+
+env:
+  # Hosted GitHub runners have 7 GB of RAM available, let's use 6 GB
+  NODE_OPTIONS: --max_old_space_size=6144
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: npm
+
+      - name: Install sync dependencies
+        run: |
+          npm install @notionhq/client@4.0.2
+
+      - name: Sync papers from Notion
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_INTERNAL_PAPERS_DB_ID: ${{ secrets.NOTION_INTERNAL_PAPERS_DB_ID }}
+          NOTION_EXTERNAL_PAPERS_DB_ID: ${{ secrets.NOTION_EXTERNAL_PAPERS_DB_ID }}
+        run: |
+          node .github/scripts/sync-notion-papers.js
+
+      - name: Check for changes
+        id: verify-changed-files
+        run: |
+          # Restore package files that were modified by npm install
+          git checkout -- package.json package-lock.json 2>/dev/null || true
+          
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit changes to main branch
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add src/data/internal-papers.json src/data/external-papers.json
+          git commit -m "🤖 Auto-sync papers from Notion database"
+          git push
+
+      - name: Install site dependencies
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        run: npm ci
+
+      - name: Build website
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          # The following lines assign commit authorship to the official
+          # GH-Actions bot for deploys to `gh-pages` branch:
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          # Optional: Add a custom commit message
+          commit_message: '🤖 Deploy updated papers from Notion sync'

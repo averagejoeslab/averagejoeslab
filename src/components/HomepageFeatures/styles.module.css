@@ -1,0 +1,70 @@
+/* Average Joes Lab Homepage Features Styles */
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+  background: var(--ifm-background-color);
+}
+
+/* Features section layout */
+.features .row {
+  align-items: stretch;
+}
+
+.features .col {
+  display: flex;
+}
+
+.features .text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* Column spacing for feature cards */
+.features .col {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
+.features .row {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 996px) {
+  .features {
+    padding: 3rem 0;
+  }
+  
+  .features .col {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  
+  .features .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .features {
+    padding: 2rem 0;
+  }
+  
+  .features .col {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  
+  .features .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+}
