@@ -1,0 +1,22 @@
+services:
+  docusaurus:
+    # Override for development with more debugging capabilities
+    environment:
+      - NODE_ENV=development
+      - DEBUG=docusaurus:*
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    # Enable more relaxed security for development debugging
+    cap_add:
+      - SYS_PTRACE  # For debugging if needed
+    # Mount additional development tools
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.docusaurus
+      - /app/build
+    # Development-friendly restart policy
+    restart: unless-stopped
+    # Enable stdin for interactive debugging
+    stdin_open: true
+    tty: true
