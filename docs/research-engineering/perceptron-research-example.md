@@ -4,13 +4,17 @@ sidebar_position: 3
 
 # The Perceptron Research Journey: A Complete Historical Example
 
-Now let's put the research cycle into action with a real historical case that changed the world. We're going to step into the shoes of **Frank Rosenblatt in 1958** - a 31-year-old psychologist working at Cornell Aeronautical Laboratory who was about to make a breakthrough that would launch the field of machine learning.
+Now let's put the research cycle into action with a real historical case that changed the world. We're going to step into the shoes of **Frank Rosenblatt in 1958**, a 31-year-old psychologist working at Cornell Aeronautical Laboratory who was about to make a breakthrough that would launch the field of machine learning.
 
 :::tip Mathematical Prerequisites
 This example uses concepts from linear algebra and calculus. If you need a refresher:
 - **Linear Algebra**: See [Stage 4: Linear Algebra](../foundations/stage-4-college-core.md#linear-algebra) for vectors, matrices, and linear transformations
 - **Calculus**: See [Stage 4: Calculus I](../foundations/stage-4-college-core.md#calculus-i) for derivatives and optimization
 - **Programming**: See [Stage 2: Python Programming](../foundations/stage-2-middle.md#python-programming) for implementation basics
+:::
+
+:::note Historical Simplification
+This narrative compresses and simplifies the actual historical timeline for pedagogical purposes. The XOR limitation wasn't discovered in 1958 but became widely recognized through Minsky and Papert's 1969 analysis. Rosenblatt's actual 1958 paper was more theoretical and didn't follow this exact experimental sequence. We've adapted the story to clearly demonstrate the research process while maintaining the spirit of the historical breakthrough.
 :::
 
 ## Setting the Scene: The World of 1958
@@ -35,7 +39,7 @@ As Rosenblatt, you're struck by a fundamental puzzle. The human brain, with its 
 
 **The Mystery**: How can such simple components, working together, create something as sophisticated as learning and intelligence?
 
-You've been reading about cybernetics - Norbert Wiener's idea that feedback and control systems could explain both biological and artificial systems. You've studied the recent work on artificial neurons by McCulloch and Pitts (1943), but their model neurons are fixed - they can't learn or adapt.
+You've been reading about cybernetics - [Norbert Wiener's](https://archive.org/details/in.ernet.dli.2015.90758) idea that feedback and control systems could explain both biological and artificial systems. You've studied the recent work on artificial neurons by [McCulloch and Pitts (1943)](https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf), but their model neurons are fixed - they can't learn or adapt.
 
 **The Gap You Notice**: All existing "artificial neurons" are static. They can compute logical functions, but they can't improve their performance based on experience. Real neurons, however, seem to strengthen their connections when they're repeatedly activated together.
 
@@ -53,18 +57,18 @@ As Rosenblatt, you dive deep into the existing literature, trying to understand 
 
 ### **Key Papers You Study:**
 
-**McCulloch & Pitts (1943): "A Logical Calculus of the Ideas Immanent in Nervous Activity"**
+**[McCulloch & Pitts (1943): "A Logical Calculus of the Ideas Immanent in Nervous Activity"](https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf)**
 - **What they did**: Created the first mathematical model of artificial neurons
 - **Their insight**: Neurons can be modeled as simple threshold logic units - they sum their inputs and fire if the total exceeds a threshold
 - **Their contribution**: Showed that networks of these artificial neurons could compute any logical function
 - **The limitation you notice**: Their neurons are completely fixed. The weights (connection strengths) are set by the designer and never change. There's no learning mechanism.
 
-**Donald Hebb (1949): "The Organization of Behavior"**
+**[Donald Hebb (1949): "The Organization of Behavior"](https://pure.mpg.de/rest/items/item_2346268_3/component/file_2346267/content)**
 - **What he proposed**: "Neurons that fire together, wire together" - when two neurons are repeatedly active at the same time, the connection between them should strengthen
 - **His insight**: Learning might happen through changes in synaptic strength, not through changing the neurons themselves
 - **Why this excites you**: This suggests a mechanism for learning! If connections can strengthen based on activity patterns, maybe artificial neurons could learn too.
 
-**Norbert Wiener (1948): "Cybernetics"**
+**[Norbert Wiener (1948): "Cybernetics"](https://archive.org/details/in.ernet.dli.2015.90758)**
 - **His framework**: Feedback loops are fundamental to intelligent behavior - systems that can adjust their behavior based on their performance
 - **The connection**: Maybe learning is just a special type of feedback system
 
@@ -328,7 +332,7 @@ The XOR failure doesn't stop you - it energizes you. This is what research is ab
 
 ### **The 1962 Proposal**
 
-Four years later, you publish "Principles of Neurodynamics" (1962), where you propose multi-layer perceptron networks. You theoretically show that:
+Four years later, you publish ["Principles of Neurodynamics" (1962)](https://babel.hathitrust.org/cgi/pt?id=mdp.39015039846566), where you propose multi-layer perceptron networks. You theoretically show that:
 - **Two layers can solve XOR**: One layer learns intermediate features, the second combines them
 - **Multiple layers increase power**: More layers should enable more complex pattern recognition
 - **The architecture exists**: You can design the network structure
@@ -348,7 +352,7 @@ But there's a devastating catch: **You can't figure out how to train these multi
 
 This training problem will stump researchers for 25 years. The multi-layer perceptron architecture exists, the need is clear, but the training method remains elusive.
 
-**What You Don't Know**: The solution will eventually come in 1986 when Rumelhart, Hinton, and Williams develop backpropagation - a way to systematically propagate errors backward through multiple layers using the chain rule from calculus.
+**What You Don't Know**: The solution will eventually come in 1986 when [Rumelhart, Hinton, and Williams develop backpropagation](https://www.nature.com/articles/323533a0) - a way to systematically propagate errors backward through multiple layers using the chain rule from calculus.
 
 **The Research Lesson**: Sometimes the biggest breakthroughs aren't new architectures or theories, but practical methods to implement existing ideas. The concept can exist decades before the implementation method is discovered.
 
@@ -356,7 +360,7 @@ This training problem will stump researchers for 25 years. The multi-layer perce
 
 ## Step 8. Communication - Sharing the Discovery with the World
 
-In 1958, you sit down to write what will become one of the most influential papers in the history of artificial intelligence: *"The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain."*
+In 1958, you sit down to write what will become one of the most influential papers in the history of artificial intelligence: *["The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain."](https://www.ling.upenn.edu/courses/cogs501/Rosenblatt1958.pdf)*
 
 ### **Crafting Your Paper**
 
@@ -409,7 +413,7 @@ But then comes 1969, and everything changes.
 
 ### **The Minsky-Papert Critique**
 
-**Marvin Minsky** and **Seymour Papert** - two titans of AI at MIT - publish a devastating critique: *"Perceptrons: An Introduction to Computational Geometry."* This isn't just criticism - it's a mathematical dissection.
+**Marvin Minsky** and **Seymour Papert** - two titans of AI at MIT - publish a devastating critique: *["Perceptrons: An Introduction to Computational Geometry."](https://rodsmith.nz/wp-content/uploads/Minsky-and-Papert-Perceptrons.pdf)* This isn't just criticism - it's a mathematical dissection.
 
 **What They Prove**:
 Using rigorous mathematical analysis, they demonstrate that single-layer perceptrons have fundamental limitations:
@@ -466,15 +470,15 @@ The story of the perceptron doesn't end with the 1969 critique. Like all great s
 **The Crash**: After Minsky and Papert's critique, neural network research nearly dies. Funding disappears, researchers switch fields, and the perceptron becomes a cautionary tale about overpromising in AI.
 
 **What Keeps the Flame Alive**: A small group of researchers continues working on neural networks:
-- **Stephen Grossberg**: Develops adaptive resonance theory
-- **Kunihiko Fukushima**: Creates the neocognitron (precursor to CNNs)
-- **John Hopfield**: Will later develop Hopfield networks (1982)
+- **Stephen Grossberg**: Develops [adaptive resonance theory](https://www.sciencedirect.com/science/article/pii/0893608087900261)
+- **Kunihiko Fukushima**: Creates the [neocognitron](https://link.springer.com/article/10.1007/BF00344251) (precursor to CNNs)
+- **John Hopfield**: Will later develop [Hopfield networks (1982)](https://www.pnas.org/doi/10.1073/pnas.79.8.2554)
 
 **The Underground Research**: These researchers, inspired by your original vision, quietly work on solving the multi-layer training problem.
 
 ### **The Renaissance (1986-Present): Deep Learning Revolution**
 
-**1986: The Breakthrough**: Rumelhart, Hinton, and Williams solve the multi-layer training problem with backpropagation. Suddenly, neural networks can learn XOR and much more complex patterns.
+**1986: The Breakthrough**: [Rumelhart, Hinton, and Williams solve the multi-layer training problem with backpropagation](https://www.nature.com/articles/323533a0). Suddenly, neural networks can learn XOR and much more complex patterns.
 
 **The Vindication**: Everything you predicted about multi-layer networks comes true:
 - **XOR solved**: Two-layer networks easily learn the function that stymied single perceptrons

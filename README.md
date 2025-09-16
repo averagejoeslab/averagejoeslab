@@ -1,75 +1,78 @@
-# Average Joes Lab Website
+# Average Joes Lab
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+> **Democratizing research and empowering citizen scientists worldwide**
 
-## Development Options
+Welcome to **Average Joes Lab** - a community-driven platform that makes scientific research accessible to everyone, regardless of background or formal education.
 
-### Option 1: Docker Development (Recommended)
+## What is Average Joes Lab?
 
-Docker provides an isolated development environment that protects against security vulnerabilities and ensures consistent setup across different operating systems.
+We believe that scientific inquiry and research methods should be accessible to everyone, not limited to traditional academic or institutional settings. Average Joes Lab is dedicated to democratizing access to research knowledge and empowering individuals to participate in the scientific process.
 
-#### Prerequisites
-- [Docker](https://docs.docker.com/get-docker/)
+### Our Mission
 
-#### Quick Start
-```bash
-# Start the development environment
-docker compose up
+- **Democratize Research**: Make the tools and knowledge of scientific inquiry accessible to all
+- **Empower Learners**: Provide practical, step-by-step guidance to conduct research effectively  
+- **Foster Community**: Build a supportive and collaborative environment for citizen scientists
+- **Champion Open Science**: Advocate for transparency, reproducibility, and open sharing of research
 
-# Or run in background
-docker compose up -d
+### Who We Are
 
-# Stop the environment
-docker compose down
-```
+We are a diverse community of self-taught researchers, professionals, students, and curious minds. We believe that systematic research methods are learnable skills that anyone can acquire and apply. Our members come from varied backgrounds, united by a shared curiosity and a commitment to open, collaborative learning.
 
-The site will be available at [http://localhost:3000](http://localhost:3000)
+## What We Offer
 
-#### Development Commands
-```bash
-# View logs
-docker compose logs -f
+### 🔬 [Research Engineering Learning Path](docs/research-engineering/getting-started.md)
+Learn the universal 10-step research methodology through hands-on practice. Follow Frank Rosenblatt's historic 1958 perceptron research journey to master the complete research cycle from curiosity to breakthrough to peer review.
 
-# Run commands inside container
-docker compose exec docusaurus npm install
-docker compose exec docusaurus npm run build
+### 📚 [STEM Foundations Learning Path](docs/foundations/getting-started.md)
+Just-in-time learning resources covering Pre-K through graduate-level mathematics, science, and programming. Use these foundations to support your research journey when you need to strengthen specific knowledge areas.
 
-# Access container shell
-docker compose exec docusaurus sh
+### 🧪 [Research Engineering Starter Repository](https://github.com/averagejoeslab/research-engineering-starter)
+Complete templates, examples, and tools to help you conduct your own research projects using the same methodology that drives scientific discovery.
 
-# Rebuild after dependency changes
-docker compose build --no-cache
-```
+### 📖 [Learning Resources & Community](docs/foundations/resources.md)
+Curated collection of free learning materials, tools, and a supportive community to help you on your research journey.
 
-### Option 2: Local Development
+## Our Approach
 
-#### Prerequisites
-- [Node.js](https://nodejs.org/) (version 18 or higher)
+- **Hands-on Learning**: Emphasize practical application through real research examples and implementations
+- **Just-in-Time Foundations**: Encourage learning foundational knowledge as needed, without strict prerequisites
+- **Collaborative Environment**: Facilitate peer-to-peer learning and mentorship within our community
+- **Resource Curation**: Organize and contextualize high-quality, freely available educational materials
+- **Open Source Principles**: Maintain all our learning guides and examples as open-source, community-contributed projects
 
-#### Installation & Development
-```bash
-npm install
-npm start
-```
+## Get Started
 
-## Building for Production
+🚀 **Ready to begin?** Start with our [Research Engineering Learning Path](docs/research-engineering/getting-started.md)
 
-```bash
-npm run build
-```
+💬 **Join the Community**: [Discord Server](https://discord.gg/7gzZMAPuGr)
 
-## Security Benefits of Docker Development
+## Improve the Learning Paths
 
-- **Isolation**: Protects your host system from potential vulnerabilities in development dependencies
-- **Consistency**: Same environment across Windows, Mac, and Linux
-- **Clean setup**: No need to manage Node.js versions locally
-- **Enhanced security**: Mitigates webpack-dev-server vulnerabilities through containerization
+Found something that could be better? We welcome your feedback!
+
+- **🐛 Report Issues**: [Open a GitHub Issue](https://github.com/averagejoeslab/averagejoeslab/issues/new) to suggest improvements to our learning paths
+- **💡 Feature Requests**: Share ideas for new content, better explanations, or additional resources
+- **📝 Content Feedback**: Help us make the learning experience more effective for everyone
 
 ## Contributing
 
-1. Fork the repository
-2. Use Docker development environment: `docker compose up`
-3. Make your changes
-4. Test your changes at http://localhost:3000
-5. Commit and push your changes
-6. Open a Pull Request
+Want to help make research more accessible? We'd love your contributions!
+
+👉 **See our [Contributors Guide](CONTRIBUTORS.md)** for detailed instructions on:
+- Setting up the Docker development environment
+- Making changes to learning paths and documentation  
+- Testing your improvements locally
+- Submitting pull requests
+
+🔒 **Security**: Review our [Security Policy](SECURITY.md) for information about our development environment security practices.
+
+## Technology
+
+This website is built using [Docusaurus](https://docusaurus.io/) and deployed via GitHub Pages. The development environment uses Docker for security and consistency across different operating systems.
+
+---
+
+*"The expert in anything was once a beginner who never gave up."*
+
+**Welcome to Average Joes Lab - where ordinary people do extraordinary research!** 🧪✨

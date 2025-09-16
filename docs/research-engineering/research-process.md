@@ -146,10 +146,15 @@ Now you understand: How did they do it? What were the key findings? What are the
 As you read, create a visual or written map of the field:
 
 **Key Papers**: What are the foundational works that everyone cites?
+
 **Timeline**: How has understanding evolved over time?
+
 **Schools of Thought**: Are there competing approaches or theories?
+
 **Methodological Approaches**: What tools and techniques are commonly used?
+
 **Open Questions**: What do researchers say needs more work?
+
 **Contradictions**: Where do different studies disagree?
 
 ### **Tools for Efficient Literature Review**
@@ -214,12 +219,15 @@ A complete hypothesis has three parts:
 ### **Common Hypothesis Mistakes**
 
 **Too Broad**: "Neural networks are better than other methods"
+
 **Better**: "A two-layer neural network will outperform a single-layer perceptron on non-linearly separable classification tasks"
 
 **Not Testable**: "Deep learning is the future of AI"
+
 **Better**: "A deep neural network will achieve higher accuracy than a shallow network on image classification tasks"
 
 **No Mechanism**: "This algorithm will work better"
+
 **Better**: "This algorithm will work better because it can capture non-linear relationships that the baseline cannot"
 
 ### **From Question to Hypothesis**
@@ -282,9 +290,13 @@ Your methodology should be detailed enough that another researcher could:
 ### **Common Methodology Pitfalls**
 
 **Underpowered studies**: Too few observations to detect real effects
+
 **Confounded variables**: Multiple factors changing simultaneously
+
 **Biased sampling**: Non-representative data that doesn't generalize
+
 **Measurement errors**: Inaccurate or unreliable data collection
+
 **Missing controls**: No way to rule out alternative explanations
 
 **Exercise:** Write a "methodology recipe" for testing one of your hypotheses:
@@ -325,10 +337,15 @@ This is where theory meets reality. Experimentation is the heart of research - i
 ### **Experimental Best Practices**
 
 **Start Small**: Begin with pilot studies to test your methodology
+
 **Control Everything**: Keep all variables constant except what you're testing
+
 **Randomize**: Use random assignment to avoid bias
+
 **Blind When Possible**: Prevent expectations from influencing results
+
 **Replicate**: Run the same experiment multiple times
+
 **Document Everything**: Keep detailed logs of procedures and observations
 
 ### **The Importance of Negative Results**
@@ -370,15 +387,21 @@ You've collected your data - now comes the crucial task of figuring out what it 
 ### **Interpretation Guidelines**
 
 **Be Conservative**: Don't overstate your findings
+
 **Consider Alternatives**: What other explanations could account for your results?
+
 **Acknowledge Limitations**: What are the weaknesses in your study?
-**Think About Generalizability**: Do your findings apply beyond your specific study?
+
+**Think About Generalization**: Do your findings apply beyond your specific study?
 
 ### **Common Analysis Mistakes**
 
 **P-hacking**: Testing multiple hypotheses until you find significance
+
 **Cherry-picking**: Reporting only favorable results
+
 **Correlation vs. Causation**: Assuming that correlation implies causation
+
 **Overgeneralization**: Claiming broader implications than your data supports
 
 **Exercise:** Practice interpreting results by writing two explanations for the same finding:
@@ -404,15 +427,21 @@ Research is rarely a straight line from question to answer. Most research involv
 ### **Types of Iteration**
 
 **Hypothesis refinement**: Adjust your predictions based on what you've learned
+
 **Methodological improvements**: Fix problems in your experimental design
+
 **Scope adjustment**: Broaden or narrow your research question
+
 **Tool upgrades**: Use better instruments or techniques
 
 ### **The Iteration Mindset**
 
 **Embrace "failure"**: Every unexpected result teaches you something valuable
+
 **Stay curious**: Let your findings guide you to new questions
+
 **Be systematic**: Document what you tried and what you learned
+
 **Maintain rigor**: Don't lower your standards just to get the results you want
 
 **Exercise:** Think of a time when something didn't work as expected (in research, work, or life). Practice the iteration mindset:
@@ -429,25 +458,37 @@ Research that isn't communicated effectively might as well not exist. Your job i
 ### **The Standard Research Paper Structure**
 
 **Abstract**: One-paragraph summary of your entire study
+
 **Introduction**: What problem are you solving? Why does it matter?
+
 **Background/Related Work**: What's already known? Where are the gaps?
+
 **Methods**: How did you test your idea? (Should be reproducible)
+
 **Results**: What happened? (Just the facts, no interpretation yet)
+
 **Discussion**: What do the results mean? What are the limitations?
+
 **Conclusion**: What's next? What are the implications?
 
 ### **Writing for Different Audiences**
 
 **Academic papers**: Formal, detailed, focused on methodology and rigor
+
 **Blog posts**: Accessible, narrative-driven, focused on insights and implications
+
 **Presentations**: Visual, high-level, focused on key findings and impact
+
 **Code repositories**: Technical, practical, focused on implementation and reproduction
 
 ### **Communication Best Practices**
 
 **Lead with the story**: What's the narrative arc of your research?
+
 **Use visuals**: Graphs, diagrams, and images communicate faster than text
+
 **Be honest about limitations**: Acknowledge what you don't know
+
 **Make it reproducible**: Provide enough detail for others to replicate your work
 
 **Exercise:** Write a one-page summary of your research (even if it's incomplete) using the standard structure. Practice explaining your work to someone outside your field.
@@ -461,22 +502,31 @@ Science is a social process. Your research isn't complete until it's been examin
 ### **Types of Feedback**
 
 **Formal peer review**: Journals and conferences use experts to evaluate submissions
+
 **Informal feedback**: Colleagues, mentors, and community members review your work
+
 **Public scrutiny**: Posting your work online for open critique
+
 **Replication attempts**: Others try to reproduce your findings
 
 ### **How to Handle Criticism**
 
 **Listen carefully**: Critics often see things you missed
+
 **Respond constructively**: Address legitimate concerns honestly
+
 **Distinguish types of criticism**: Methodological flaws vs. differences of opinion
+
 **Learn from rejection**: Use reviewer feedback to improve your work
 
 ### **Giving Good Feedback**
 
 **Be specific**: Point out exactly what works and what doesn't
+
 **Be constructive**: Suggest improvements, not just problems
+
 **Be respectful**: Remember there's a person behind the work
+
 **Focus on the work**: Critique ideas and methods, not the researcher
 
 **Exercise:** Find a research paper in your field and write a constructive review:
@@ -494,15 +544,21 @@ Every piece of research raises more questions than it answers. This isn't a bug 
 ### **How Research Builds on Research**
 
 **Direct extensions**: Taking your method and applying it to new problems
+
 **Methodological improvements**: Addressing limitations in your approach
+
 **Theoretical developments**: Building frameworks to explain your findings
+
 **Practical applications**: Using your discoveries to solve real-world problems
 
 ### **Identifying Follow-up Questions**
 
 **What didn't work?**: Limitations often point to the most important next questions
+
 **What surprised you?**: Unexpected results deserve deeper investigation
+
 **What would happen if?**: Variations on your study design
+
 **How does this apply elsewhere?**: Generalization to other domains
 
 ### **The Research Community**
@@ -512,7 +568,9 @@ Your questions become starting points for other researchers. Their questions ins
 ### **Building a Research Program**
 
 **Short-term projects** (weeks to months): Individual studies testing specific hypotheses
+
 **Medium-term themes** (months to years): Related studies exploring a particular phenomenon
+
 **Long-term vision** (years to decades): Fundamental questions that guide your career
 
 **Exercise:** Based on your current interests, identify:

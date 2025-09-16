@@ -77,7 +77,7 @@ We're a community of regular people from varied backgrounds who believe that sys
 This comprehensive guide teaches research engineering through a structured three-part approach:
 
 ### **[Part 1: The Universal Research Process](research-process.md)**
-Understand research cycle that provides a structured way of asking questions, exploring possibilities, and sharing what you learn. This methodology works across all fields, from computer science to biology to psychology to economics.
+Understanding the research cycle that provides a structured way of asking questions, exploring possibilities, and sharing what you learn. This methodology works across all fields, from computer science to biology to psychology to economics.
 
 **The Steps You'll Learn:**
 1. **Curiosity & Problem Framing** - Transform vague interests into sharp research questions
@@ -95,7 +95,7 @@ Understand research cycle that provides a structured way of asking questions, ex
 Experience the complete research cycle by stepping into Frank Rosenblatt's shoes in 1958 as he creates the first learning machine. This detailed historical walkthrough shows you exactly how each step of the research process unfolds in practice.
 
 **What You'll Learn:**
-- **The world of 1958**: Room-sized computers, vacuum tubes, and the birth of AI
+- **The historical context of AI in 1958**: Room-sized computers, vacuum tubes, and the birth of AI
 - **Rosenblatt's curiosity**: "Can we build a machine that learns like a brain?"
 - **Literature review**: Building on [McCulloch-Pitts neurons (1943)](https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf) and [Hebbian learning (1949)](https://pure.mpg.de/rest/items/item_2346268_3/component/file_2346267/content)
 - **The breakthrough hypothesis**: Weighted inputs + error correction = learning
@@ -106,11 +106,7 @@ Experience the complete research cycle by stepping into Frank Rosenblatt's shoes
 - **Modern vindication**: How [backpropagation (1986)](https://arxiv.org/abs/2308.09728) solved the multi-layer training problem
 
 **Why This Example Works:**
-- **Complete narrative arc**: From initial spark through critique to eventual vindication
-- **Real code and math**: See actual algorithms and implementations
-- **Honest about failure**: The XOR limitation that stumped researchers for decades
-- **Historical significance**: The foundation of all modern neural networks
-- **Research lessons**: Each step demonstrates key research principles
+The Perceptron worked example provides a way of learning the research process using a complete narrative arc of Rosenblatt's work using code and math that align with the original paper (programming was a lot different back then, so we modernize this part with Python in our example).
 
 ### **Part 3: Your Research Journey**
 Apply the methodology you've learned to your own research interests using our comprehensive [starter repository](https://github.com/averagejoeslab/research-engineering-starter) with templates, examples, and community support.
