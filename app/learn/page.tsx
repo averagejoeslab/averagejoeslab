@@ -16,7 +16,7 @@ export default function LearnPage() {
       icon: FlaskConical,
       title: 'Research Engineering',
       description: 'Learn the universal 10-step research methodology. Follow Frank Rosenblatt\'s historic 1958 perceptron research journey to master the complete research cycle.',
-      href: '/learn/research-engineering/getting-started',
+      href: '/learn/research-engineering/getting-started/',
       items: [
         'Getting Started with Research Engineering',
         'The Universal Research Process (10 Steps)',
@@ -27,7 +27,7 @@ export default function LearnPage() {
       icon: GraduationCap,
       title: 'STEM Foundations',
       description: 'Just-in-time learning resources covering Pre-K through graduate-level mathematics, science, and programming to support your research journey.',
-      href: '/learn/foundations/getting-started',
+      href: '/learn/foundations/getting-started/',
       items: [
         'Stage 0-3: Early through Secondary Foundations',
         'Stage 4-6: College through Advanced Topics',
