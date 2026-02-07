@@ -104,7 +104,7 @@ async function syncInternalPapersFromNotion() {
     });
 
     // Ensure data directory exists
-    const dataDir = path.join(process.cwd(), 'src', 'data');
+    const dataDir = path.join(process.cwd(), 'data');
     if (!fs.existsSync(dataDir)) {
       fs.mkdirSync(dataDir, { recursive: true });
     }
@@ -239,7 +239,7 @@ async function syncExternalPapersFromNotion() {
     });
 
     // Ensure data directory exists
-    const dataDir = path.join(process.cwd(), 'src', 'data');
+    const dataDir = path.join(process.cwd(), 'data');
     if (!fs.existsSync(dataDir)) {
       fs.mkdirSync(dataDir, { recursive: true });
     }
@@ -253,7 +253,7 @@ async function syncExternalPapersFromNotion() {
     
     // Log summary
     const statusCounts = externalPapers.reduce((acc, paper) => {
-      acc[paper.status] = (acc[paper.status] || 0) + 1;
+      acc[paper.reproductionStatus] = (acc[paper.reproductionStatus] || 0) + 1;
       return acc;
     }, {});
     

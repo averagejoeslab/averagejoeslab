@@ -11,68 +11,61 @@ We believe that scientific inquiry and research methods should be accessible to 
 ### Our Mission
 
 - **Democratize Research**: Make the tools and knowledge of scientific inquiry accessible to all
-- **Empower Learners**: Provide practical, step-by-step guidance to conduct research effectively  
+- **Empower Learners**: Provide practical, step-by-step guidance to conduct research effectively
 - **Foster Community**: Build a supportive and collaborative environment for citizen scientists
 - **Champion Open Science**: Advocate for transparency, reproducibility, and open sharing of research
 
-### Who We Are
-
-We are a diverse community of self-taught researchers, professionals, students, and curious minds. We believe that systematic research methods are learnable skills that anyone can acquire and apply. Our members come from varied backgrounds, united by a shared curiosity and a commitment to open, collaborative learning.
-
 ## What We Offer
 
-### 🔬 [Research Engineering Learning Path](docs/research-engineering/getting-started.md)
-Learn the universal 10-step research methodology through hands-on practice. Follow Frank Rosenblatt's historic 1958 perceptron research journey to master the complete research cycle from curiosity to breakthrough to peer review.
-
-### 📚 [STEM Foundations Learning Path](docs/foundations/getting-started.md)
-Just-in-time learning resources covering Pre-K through graduate-level mathematics, science, and programming. Use these foundations to support your research journey when you need to strengthen specific knowledge areas.
-
-### 🧪 [Research Engineering Starter Repository](https://github.com/averagejoeslab/research-engineering-starter)
-Complete templates, examples, and tools to help you conduct your own research projects using the same methodology that drives scientific discovery.
-
-### 📖 [Learning Resources & Community](docs/foundations/resources.md)
-Curated collection of free learning materials, tools, and a supportive community to help you on your research journey.
-
-## Our Approach
-
-- **Hands-on Learning**: Emphasize practical application through real research examples and implementations
-- **Just-in-Time Foundations**: Encourage learning foundational knowledge as needed, without strict prerequisites
-- **Collaborative Environment**: Facilitate peer-to-peer learning and mentorship within our community
-- **Resource Curation**: Organize and contextualize high-quality, freely available educational materials
-- **Open Source Principles**: Maintain all our learning guides and examples as open-source, community-contributed projects
-
-## Get Started
-
-🚀 **Ready to begin?** Start with our [Research Engineering Learning Path](docs/research-engineering/getting-started.md)
-
-💬 **Join the Community**: [Discord Server](https://discord.gg/7gzZMAPuGr)
-
-## Improve the Learning Paths
-
-Found something that could be better? We welcome your feedback!
-
-- **🐛 Report Issues**: [Open a GitHub Issue](https://github.com/averagejoeslab/averagejoeslab/issues/new) to suggest improvements to our learning paths
-- **💡 Feature Requests**: Share ideas for new content, better explanations, or additional resources
-- **📝 Content Feedback**: Help us make the learning experience more effective for everyone
-
-## Contributing
-
-Want to help make research more accessible? We'd love your contributions!
-
-👉 **See our [Contributors Guide](CONTRIBUTORS.md)** for detailed instructions on:
-- Setting up the Docker development environment
-- Making changes to learning paths and documentation  
-- Testing your improvements locally
-- Submitting pull requests
-
-🔒 **Security**: Review our [Security Policy](SECURITY.md) for information about our development environment security practices.
+- **[Research Engineering Learning Path](https://averagejoeslab.com/learn/research-engineering/getting-started/)** - Learn the universal 10-step research methodology
+- **[STEM Foundations Learning Path](https://averagejoeslab.com/learn/foundations/getting-started/)** - Just-in-time learning resources from Pre-K to graduate level
+- **[Internal Research Papers](https://averagejoeslab.com/internal-papers/)** - Community-generated research
+- **[External Papers & Reproductions](https://averagejoeslab.com/external-papers/)** - Tracking and reproducing important research
+- **[Blog](https://averagejoeslab.com/blog/)** - Insights and updates from the community
 
 ## Technology
 
-This website is built using [Docusaurus](https://docusaurus.io/) and deployed via GitHub Pages. The development environment uses Docker for security and consistency across different operating systems.
+- **Framework**: [Next.js 16](https://nextjs.org/) with static export
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Language**: TypeScript
+- **Hosting**: GitHub Pages at [averagejoeslab.com](https://averagejoeslab.com)
+- **Blog**: Separate [averagejoeslab-blog](https://github.com/averagejoeslab/averagejoeslab-blog) repo, fetched at build time
+- **Papers**: Synced from Notion databases daily via GitHub Actions
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server (fetches blog content first)
+npm run dev
+
+# Build for production
+npm run build
+
+# Type check
+npm run type-check
+
+# Lint
+npm run lint
+```
+
+## Get Started
+
+- **Ready to begin?** Start with our [Research Engineering Learning Path](https://averagejoeslab.com/learn/research-engineering/getting-started/)
+- **Join the Community**: [Discord Server](https://discord.gg/7gzZMAPuGr)
+
+## Contributing
+
+See our [Contributors Guide](CONTRIBUTORS.md) for details on how to contribute.
+
+## Security
+
+Review our [Security Policy](SECURITY.md) for information about security practices.
 
 ---
 
 *"The expert in anything was once a beginner who never gave up."*
 
-**Welcome to Average Joes Lab - where ordinary people do extraordinary research!** 🧪✨
+**Welcome to Average Joes Lab - where ordinary people do extraordinary research!**
