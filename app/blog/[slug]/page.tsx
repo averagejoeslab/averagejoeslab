@@ -87,7 +87,7 @@ export default async function BlogPostPage({
         <div className="relative container-max section-padding">
           <div className="max-w-3xl mx-auto">
             <Link
-              href="/blog"
+              href="/blog/"
               className="inline-flex items-center text-accent-500 hover:text-accent-600 font-medium mb-6 transition-colors"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
@@ -150,7 +150,7 @@ export default async function BlogPostPage({
       {/* Bottom Section */}
       <section className="section-padding border-t border-slate-200">
         <div className="max-w-3xl mx-auto text-center">
-          <Link href="/blog" className="btn-primary inline-flex items-center">
+          <Link href="/blog/" className="btn-primary inline-flex items-center">
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to All Posts
           </Link>

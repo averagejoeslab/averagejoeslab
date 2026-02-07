@@ -59,7 +59,7 @@ export default async function LearnPageRoute({
           <aside className="lg:w-64 flex-shrink-0">
             <div className="lg:sticky lg:top-24">
               <Link
-                href="/learn"
+                href="/learn/"
                 className="inline-flex items-center text-accent-500 hover:text-accent-600 font-medium mb-4 text-sm transition-colors"
               >
                 <ArrowLeft className="h-4 w-4 mr-1" />
@@ -80,7 +80,7 @@ export default async function LearnPageRoute({
             <div className="mt-12 pt-8 border-t border-slate-200 flex justify-between">
               {prevPage ? (
                 <Link
-                  href={`/learn/${prevPage.slug.join('/')}`}
+                  href={`/learn/${prevPage.slug.join('/')}/`}
                   className="flex items-center text-accent-500 hover:text-accent-600 font-medium transition-colors"
                 >
                   <ArrowLeft className="h-4 w-4 mr-2" />
@@ -94,7 +94,7 @@ export default async function LearnPageRoute({
               )}
               {nextPage ? (
                 <Link
-                  href={`/learn/${nextPage.slug.join('/')}`}
+                  href={`/learn/${nextPage.slug.join('/')}/`}
                   className="flex items-center text-accent-500 hover:text-accent-600 font-medium transition-colors text-right"
                 >
                   <div>

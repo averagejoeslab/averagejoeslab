@@ -51,17 +51,17 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Research</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/learn" className="text-slate-300 hover:text-white transition-colors">
+                <Link href="/learn/" className="text-slate-300 hover:text-white transition-colors">
                   Learn
                 </Link>
               </li>
               <li>
-                <Link href="/internal-papers" className="text-slate-300 hover:text-white transition-colors">
+                <Link href="/internal-papers/" className="text-slate-300 hover:text-white transition-colors">
                   Internal Papers
                 </Link>
               </li>
               <li>
-                <Link href="/external-papers" className="text-slate-300 hover:text-white transition-colors">
+                <Link href="/external-papers/" className="text-slate-300 hover:text-white transition-colors">
                   External Papers
                 </Link>
               </li>
@@ -100,7 +100,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Content</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/blog" className="text-slate-300 hover:text-white transition-colors">
+                <Link href="/blog/" className="text-slate-300 hover:text-white transition-colors">
                   Blog
                 </Link>
               </li>

@@ -36,7 +36,7 @@ export function Header() {
               Home
             </Link>
             <Link
-              href="/learn"
+              href="/learn/"
               className="text-slate-700 hover:text-accent-500 font-medium transition-colors duration-200"
             >
               Learn
@@ -55,14 +55,14 @@ export function Header() {
               {isResearchOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-slate-200 py-2 z-50">
                   <Link
-                    href="/internal-papers"
+                    href="/internal-papers/"
                     className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-accent-500 transition-colors"
                     onClick={() => setIsResearchOpen(false)}
                   >
                     Internal Papers
                   </Link>
                   <Link
-                    href="/external-papers"
+                    href="/external-papers/"
                     className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-accent-500 transition-colors"
                     onClick={() => setIsResearchOpen(false)}
                   >
@@ -73,7 +73,7 @@ export function Header() {
             </div>
 
             <Link
-              href="/blog"
+              href="/blog/"
               className="text-slate-700 hover:text-accent-500 font-medium transition-colors duration-200"
             >
               Blog
@@ -128,28 +128,28 @@ export function Header() {
                 Home
               </Link>
               <Link
-                href="/learn"
+                href="/learn/"
                 className="block px-3 py-2 text-slate-700 hover:text-accent-500 font-medium transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Learn
               </Link>
               <Link
-                href="/internal-papers"
+                href="/internal-papers/"
                 className="block px-3 py-2 text-slate-700 hover:text-accent-500 font-medium transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Internal Papers
               </Link>
               <Link
-                href="/external-papers"
+                href="/external-papers/"
                 className="block px-3 py-2 text-slate-700 hover:text-accent-500 font-medium transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 External Papers
               </Link>
               <Link
-                href="/blog"
+                href="/blog/"
                 className="block px-3 py-2 text-slate-700 hover:text-accent-500 font-medium transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >

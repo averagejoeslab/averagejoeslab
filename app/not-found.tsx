@@ -29,13 +29,13 @@ export default function NotFound() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-2 justify-center">
-            <Link href="/learn" className="text-accent-500 hover:text-accent-600 text-sm">
+            <Link href="/learn/" className="text-accent-500 hover:text-accent-600 text-sm">
               Learn
             </Link>
-            <Link href="/internal-papers" className="text-accent-500 hover:text-accent-600 text-sm">
+            <Link href="/internal-papers/" className="text-accent-500 hover:text-accent-600 text-sm">
               Internal Papers
             </Link>
-            <Link href="/blog" className="text-accent-500 hover:text-accent-600 text-sm">
+            <Link href="/blog/" className="text-accent-500 hover:text-accent-600 text-sm">
               Blog
             </Link>
           </div>

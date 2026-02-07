@@ -60,7 +60,7 @@ export default function LearnSidebar({ sections, currentSlug }: Props) {
                   return (
                     <li key={pagePath}>
                       <Link
-                        href={`/learn/${pagePath}`}
+                        href={`/learn/${pagePath}/`}
                         className={`block px-3 py-1.5 text-sm rounded-lg transition-colors ${
                           isActive
                             ? 'bg-accent-50 text-accent-700 font-medium'

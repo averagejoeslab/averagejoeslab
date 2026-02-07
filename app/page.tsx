@@ -62,7 +62,7 @@ export default function Home() {
               Democratizing research for citizen scientists. We empower ordinary people to do extraordinary things in the world of science through open collaboration, accessible tools, and community support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/learn/research-engineering/getting-started" className="btn-primary text-lg px-8 py-4">
+              <Link href="/learn/research-engineering/getting-started/" className="btn-primary text-lg px-8 py-4">
                 Start Research Path
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -115,11 +115,11 @@ export default function Home() {
             Whether you&apos;re a complete beginner or an experienced researcher, there&apos;s a place for you in our community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/learn/research-engineering/getting-started" className="inline-flex items-center px-8 py-4 bg-white text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-colors">
+            <Link href="/learn/research-engineering/getting-started/" className="inline-flex items-center px-8 py-4 bg-white text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-colors">
               Start Learning Path
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
-            <Link href="/internal-papers" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+            <Link href="/internal-papers/" className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
               Browse Papers
             </Link>
             <a

@@ -98,7 +98,7 @@ export default function BlogPostGrid({ posts, allTags }: Props) {
 
                 {/* Title */}
                 <h2 className="text-xl font-bold text-slate-900 mb-2">
-                  <Link href={`/blog/${post.slug}`} className="hover:text-accent-500 transition-colors">
+                  <Link href={`/blog/${post.slug}/`} className="hover:text-accent-500 transition-colors">
                     {post.title}
                   </Link>
                 </h2>
@@ -127,7 +127,7 @@ export default function BlogPostGrid({ posts, allTags }: Props) {
 
                 {/* Read More */}
                 <Link
-                  href={`/blog/${post.slug}`}
+                  href={`/blog/${post.slug}/`}
                   className="inline-flex items-center text-accent-500 hover:text-accent-600 font-medium text-sm transition-colors"
                 >
                   Read More
