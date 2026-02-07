@@ -52,15 +52,18 @@ export function getAllLearnSlugs(): string[][] {
 export function getSidebarData(): LearnSection[] {
   if (!fs.existsSync(LEARN_DIRECTORY)) return []
 
+  const sectionOrder = ['research-engineering', 'foundations']
   const sectionLabels: Record<string, string> = {
     'research-engineering': 'Research Engineering',
     'foundations': 'STEM Foundations',
   }
 
-  const sections = fs.readdirSync(LEARN_DIRECTORY).filter((dir) => {
+  const allDirs = fs.readdirSync(LEARN_DIRECTORY).filter((dir) => {
     const fullPath = path.join(LEARN_DIRECTORY, dir)
     return fs.statSync(fullPath).isDirectory()
   })
+
+  const sections = sectionOrder.filter((s) => allDirs.includes(s))
 
   return sections.map((section) => {
     const sectionDir = path.join(LEARN_DIRECTORY, section)

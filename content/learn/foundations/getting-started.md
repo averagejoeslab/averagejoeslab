@@ -61,11 +61,11 @@ Before diving into foundations, reflect on your current knowledge:
 
 Based on your self-assessment:
 
-- **Complete beginner**: Start with [Stage 0: Early Foundations](stage-0-early/)
-- **Some high school**: Begin at [Stage 2: Middle School](stage-2-middle/)
-- **High school graduate**: Try [Stage 3: Secondary](stage-3-secondary/)
-- **Some college**: Jump to [Stage 4: College Core](stage-4-college-core/)
-- **College graduate**: Review [Stage 5: Expansion](stage-5-expansion/) for gaps
+- **Complete beginner**: Start with [Stage 0: Early Foundations](/learn/foundations/stage-0-early/)
+- **Some high school**: Begin at [Stage 2: Middle School](/learn/foundations/stage-2-middle/)
+- **High school graduate**: Try [Stage 3: Secondary](/learn/foundations/stage-3-secondary/)
+- **Some college**: Jump to [Stage 4: College Core](/learn/foundations/stage-4-college-core/)
+- **College graduate**: Review [Stage 5: Expansion](/learn/foundations/stage-5-expansion/) for gaps
 - **Just need specifics**: Use the search or browse by topic
 
 ## Field-Specific Foundation Maps
@@ -111,25 +111,25 @@ Different research fields require different foundations. Here's what you'll like
 
 Our curriculum is organized into 7 progressive stages:
 
-### [Stage 0: Early Foundations (Pre-K to Grade 2)](stage-0-early/)
+### [Stage 0: Early Foundations (Pre-K to Grade 2)](/learn/foundations/stage-0-early/)
 Building blocks of mathematical thinking and scientific observation
 
-### [Stage 1: Primary Foundations (Grades 3-5)](stage-1-primary/)
+### [Stage 1: Primary Foundations (Grades 3-5)](/learn/foundations/stage-1-primary/)
 Core arithmetic, basic science, and introduction to logical thinking
 
-### [Stage 2: Middle School Foundations (Grades 6-8)](stage-2-middle/)
+### [Stage 2: Middle School Foundations (Grades 6-8)](/learn/foundations/stage-2-middle/)
 Pre-algebra, earth science, life science, and computational thinking
 
-### [Stage 3: Secondary Foundations (Grades 9-12)](stage-3-secondary/)
+### [Stage 3: Secondary Foundations (Grades 9-12)](/learn/foundations/stage-3-secondary/)
 Algebra through pre-calculus, physics, chemistry, biology, and programming
 
-### [Stage 4: College Core (Years 1-2)](stage-4-college-core/)
+### [Stage 4: College Core (Years 1-2)](/learn/foundations/stage-4-college-core/)
 Calculus, linear algebra, statistics, and intermediate programming
 
-### [Stage 5: Expansion (Years 2-3)](stage-5-expansion/)
+### [Stage 5: Expansion (Years 2-3)](/learn/foundations/stage-5-expansion/)
 Advanced mathematics, specialized sciences, and advanced computing
 
-### [Stage 6: Advanced Topics (Years 3-4)](stage-6-advanced/)
+### [Stage 6: Advanced Topics (Years 3-4)](/learn/foundations/stage-6-advanced/)
 Graduate-level preparation in mathematics, science, and computing
 
 ## Connection to Research Engineering
@@ -177,7 +177,7 @@ Each research step benefits from specific foundations:
 - **PhET Simulations**: Interactive science simulations
 - **Wolfram Alpha**: Computational knowledge engine
 
-See our [Complete Resources Guide](resources/) for more.
+See our [Complete Resources Guide](/learn/foundations/resources/) for more.
 
 ## Community Support
 
@@ -226,10 +226,10 @@ Remember: This is a reference library, not a race. Use what you need, when you n
 👉 **[Begin the Research Engineering Learning Path](/learn/research-engineering/getting-started/)** - This is your main path!
 
 **Need to strengthen specific foundations?** Choose your resource:
-- [Stage 0: Early Foundations](stage-0-early/) - Start from the beginning
-- [Stage 3: Secondary](stage-3-secondary/) - High school level refresh
-- [Stage 4: College Core](stage-4-college-core/) - University foundations
-- [Resources & Tools](resources/) - Jump straight to learning resources
+- [Stage 0: Early Foundations](/learn/foundations/stage-0-early/) - Start from the beginning
+- [Stage 3: Secondary](/learn/foundations/stage-3-secondary/) - High school level refresh
+- [Stage 4: College Core](/learn/foundations/stage-4-college-core/) - University foundations
+- [Resources & Tools](/learn/foundations/resources/) - Jump straight to learning resources
 
 Remember: These foundations are here to support you when needed, not to delay your research journey!
 

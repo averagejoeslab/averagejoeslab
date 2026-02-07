@@ -34,6 +34,11 @@ function slugFromFilename(filename: string): string {
   return filename.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/\.md$/, '')
 }
 
+function dateFromFilename(filename: string): string {
+  const match = filename.match(/^(\d{4}-\d{2}-\d{2})/)
+  return match ? match[1] : ''
+}
+
 export function getAllPostSlugs(): string[] {
   if (!fs.existsSync(POSTS_DIRECTORY)) return []
 
@@ -59,7 +64,7 @@ export function getAllPosts(): BlogPostMeta[] {
       const meta: BlogPostMeta = {
         slug: slugFromFilename(filename),
         title: data.title ?? '',
-        date: data.date ?? '',
+        date: data.date ?? dateFromFilename(filename),
         excerpt: data.excerpt ?? '',
         author: data.author ?? '',
         tags: data.tags ?? [],
@@ -104,7 +109,7 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
   return {
     slug,
     title: data.title ?? '',
-    date: data.date ?? '',
+    date: data.date ?? dateFromFilename(filename),
     excerpt: data.excerpt ?? '',
     author: data.author ?? '',
     tags: data.tags ?? [],

@@ -191,8 +191,8 @@ Ready to start learning research methods?
 
 ### **Your Next Steps:**
 
-1. **[Learn the Research Process](research-process/)** - Understand the research methodology
-2. **[Study the Perceptron Example](perceptron-research-example/)** - See the methodology in action
+1. **[Learn the Research Process](/learn/research-engineering/research-process/)** - Understand the research methodology
+2. **[Study the Perceptron Example](/learn/research-engineering/perceptron-research-example/)** - See the methodology in action
 3. **[Get the Starter Repository](https://github.com/averagejoeslab/research-engineering-starter)** - Apply what you've learned to your own research
 
 ### **Community & Resources:**
