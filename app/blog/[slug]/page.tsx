@@ -116,13 +116,17 @@ export default async function BlogPostPage({
               </div>
               <div className="flex items-center">
                 <Calendar className="h-4 w-4 mr-1.5" />
-                <time dateTime={post.date}>
-                  {new Date(post.date).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                  })}
-                </time>
+                {post.date ? (
+                  <time dateTime={post.date}>
+                    {new Date(post.date).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })}
+                  </time>
+                ) : (
+                  <span>Date not available</span>
+                )}
               </div>
               <div className="flex items-center">
                 <Clock className="h-4 w-4 mr-1.5" />

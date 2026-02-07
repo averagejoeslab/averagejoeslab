@@ -109,13 +109,17 @@ export default function BlogPostGrid({ posts, allTags }: Props) {
                 {/* Meta */}
                 <div className="flex items-center text-sm text-slate-500 mb-4">
                   <Calendar className="h-4 w-4 mr-1.5" />
-                  <time dateTime={post.date}>
-                    {new Date(post.date).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric',
-                    })}
-                  </time>
+                  {post.date ? (
+                    <time dateTime={post.date}>
+                      {new Date(post.date).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                      })}
+                    </time>
+                  ) : (
+                    <span>Date not available</span>
+                  )}
                   <span className="mx-2">&middot;</span>
                   <Clock className="h-4 w-4 mr-1.5" />
                   <span>{post.readingTime} min read</span>

@@ -186,10 +186,10 @@ export default function ExternalPapersContent({ papers }: Props) {
                 const reproColor = getReproductionStatusColor(paper.reproductionStatus)
                 const priColor = getPriorityColor(paper.priority)
                 const paperLink = paper.abstractUrl?.trim()
-                  || (paper.arxivId?.trim() && paper.arxivId !== '0'
-                    ? `https://arxiv.org/abs/${paper.arxivId.replace('arXiv:', '')}`
+                  || (paper.arxivId?.trim() && paper.arxivId.trim() !== '0'
+                    ? `https://arxiv.org/abs/${paper.arxivId.trim().replace('arXiv:', '')}`
                     : null)
-                  || (paper.doi?.trim() ? `https://doi.org/${paper.doi}` : null)
+                  || (paper.doi?.trim() ? `https://doi.org/${paper.doi.trim()}` : null)
                 const pdfLink = paper.pdfUrl?.trim() || null
                 const codeLink = paper.repository?.trim() || null
 

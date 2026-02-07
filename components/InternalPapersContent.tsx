@@ -178,10 +178,10 @@ export default function InternalPapersContent({ papers }: Props) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {sortedPapers.map((paper) => {
                 const statusColor = getStatusColor(paper.status)
-                const paperLink = paper.arxivId
-                  ? `https://arxiv.org/abs/${paper.arxivId.replace('arXiv:', '')}`
-                  : paper.doi
-                    ? `https://doi.org/${paper.doi}`
+                const paperLink = paper.arxivId?.trim()
+                  ? `https://arxiv.org/abs/${paper.arxivId.trim().replace('arXiv:', '')}`
+                  : paper.doi?.trim()
+                    ? `https://doi.org/${paper.doi.trim()}`
                     : null
                 const codeLink = paper.githubRepo?.trim() || null
 
