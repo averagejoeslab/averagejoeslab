@@ -49,7 +49,7 @@ export default async function LearnPageRoute({
   const currentPath = slug.join('/')
   const currentIndex = allPages.findIndex((p) => p.slug.join('/') === currentPath)
   const prevPage = currentIndex > 0 ? allPages[currentIndex - 1] : null
-  const nextPage = currentIndex < allPages.length - 1 ? allPages[currentIndex + 1] : null
+  const nextPage = currentIndex >= 0 && currentIndex < allPages.length - 1 ? allPages[currentIndex + 1] : null
 
   return (
     <div className="bg-white">
