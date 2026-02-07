@@ -253,7 +253,7 @@ async function syncExternalPapersFromNotion() {
     
     // Log summary
     const statusCounts = externalPapers.reduce((acc, paper) => {
-      acc[paper.status] = (acc[paper.status] || 0) + 1;
+      acc[paper.reproductionStatus] = (acc[paper.reproductionStatus] || 0) + 1;
       return acc;
     }, {});
     

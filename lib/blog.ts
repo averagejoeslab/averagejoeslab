@@ -40,6 +40,12 @@ function dateFromFilename(filename: string): string {
   return match ? match[1] : ''
 }
 
+function normalizeDate(value: unknown, filename: string): string {
+  if (value instanceof Date) return value.toISOString().split('T')[0]
+  if (typeof value === 'string' && value) return value
+  return dateFromFilename(filename)
+}
+
 export function getAllPostSlugs(): string[] {
   if (!fs.existsSync(POSTS_DIRECTORY)) return []
 
@@ -65,7 +71,7 @@ export function getAllPosts(): BlogPostMeta[] {
       const meta: BlogPostMeta = {
         slug: slugFromFilename(filename),
         title: data.title ?? '',
-        date: data.date ?? dateFromFilename(filename),
+        date: normalizeDate(data.date, filename),
         excerpt: data.excerpt ?? '',
         author: data.author ?? '',
         tags: data.tags ?? [],
@@ -111,7 +117,7 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
   return {
     slug,
     title: data.title ?? '',
-    date: data.date ?? dateFromFilename(filename),
+    date: normalizeDate(data.date, filename),
     excerpt: data.excerpt ?? '',
     author: data.author ?? '',
     tags: data.tags ?? [],
