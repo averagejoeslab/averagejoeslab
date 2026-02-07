@@ -1,0 +1,34 @@
+# Average Joes Lab
+
+> Democratizing research for citizen scientists. Open science by ordinary people.
+
+## About
+
+Average Joes Lab is a community-driven platform that makes scientific research accessible to everyone, regardless of background or formal education. We provide learning paths, research papers, and community support for citizen researchers worldwide.
+
+## Mission
+
+- Democratize Research: Make the tools and knowledge of scientific inquiry accessible to all
+- Empower Learners: Provide practical, step-by-step guidance to conduct research effectively
+- Foster Community: Build a supportive and collaborative environment for citizen scientists
+- Champion Open Science: Advocate for transparency, reproducibility, and open sharing of research
+
+## Pages
+
+- Home: https://averagejoeslab.com/
+- Learning Paths: https://averagejoeslab.com/learn/
+- Research Engineering: https://averagejoeslab.com/learn/research-engineering/getting-started/
+- STEM Foundations: https://averagejoeslab.com/learn/foundations/getting-started/
+- Internal Papers: https://averagejoeslab.com/internal-papers/
+- External Papers: https://averagejoeslab.com/external-papers/
+- Blog: https://averagejoeslab.com/blog/
+
+## Community
+
+- Discord: https://discord.gg/7gzZMAPuGr
+- GitHub: https://github.com/averagejoeslab
+
+## Contact
+
+- Website: https://averagejoeslab.com
+- GitHub: https://github.com/averagejoeslab
