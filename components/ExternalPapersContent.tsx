@@ -187,7 +187,7 @@ export default function ExternalPapersContent({ papers }: Props) {
                 const priColor = getPriorityColor(paper.priority)
                 const paperLink = paper.abstractUrl?.trim()
                   || (paper.arxivId?.trim() && paper.arxivId !== '0'
-                    ? `https://arxiv.org/abs/${paper.arxivId}`
+                    ? `https://arxiv.org/abs/${paper.arxivId.replace('arXiv:', '')}`
                     : null)
                   || (paper.doi?.trim() ? `https://doi.org/${paper.doi}` : null)
                 const pdfLink = paper.pdfUrl?.trim() || null
