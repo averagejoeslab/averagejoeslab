@@ -6,6 +6,7 @@ import remarkParse from 'remark-parse'
 import remarkGfm from 'remark-gfm'
 import remarkRehype from 'remark-rehype'
 import rehypeRaw from 'rehype-raw'
+import rehypeSlug from 'rehype-slug'
 import rehypeMermaid from 'rehype-mermaid'
 import rehypeStringify from 'rehype-stringify'
 
@@ -106,6 +107,7 @@ export async function getLearnPage(slug: string[]): Promise<LearnPage | null> {
     .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
+    .use(rehypeSlug)
     .use(rehypeMermaid, {
       strategy: 'inline-svg',
       mermaidConfig: { theme: 'neutral' },

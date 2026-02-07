@@ -111,7 +111,7 @@ The Perceptron worked example provides a way of learning the research process us
 ### **Part 3: Your Research Journey**
 Apply the methodology you've learned to your own research interests using our comprehensive [starter repository](https://github.com/averagejoeslab/research-engineering-starter) with templates, examples, and community support.
 
-> **Tip:** If you want to explore other foundational papers beyond the perceptron, check out our comprehensive **[Paper Recommendations Guide](https://github.com/averagejoeslab/research-engineering-starter/blob/main/paper-recommendations/)** which includes curated options across Computer Science, Biology, Psychology, Economics, and Physics - all selected for their ease of being implemented and learning potential.
+> **Tip:** If you want to explore other foundational papers beyond the perceptron, check out our comprehensive **[Paper Recommendations Guide](https://github.com/averagejoeslab/research-engineering-starter/blob/main/paper-recommendations.md)** which includes curated options across Computer Science, Biology, Psychology, Economics, and Physics - all selected for their ease of being implemented and learning potential.
 
 ## Learning Approach & Support
 
