@@ -30,11 +30,20 @@ export const metadata: Metadata = {
     siteName: 'Average Joes Lab',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/images/ajlabs-logo-light.png',
+        width: 512,
+        height: 512,
+        alt: 'Average Joes Lab',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Average Joes Lab - Democratizing Research for Citizen Scientists',
     description: 'Open research laboratory for citizen researchers. Democratizing research and empowering ordinary people to contribute to scientific discovery.',
+    images: ['/images/ajlabs-logo-light.png'],
   },
   alternates: {
     canonical: '/',
