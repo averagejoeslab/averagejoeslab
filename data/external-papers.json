@@ -1,70 +1,6 @@
 [
   {
     "id": 1,
-    "title": "On the Biology of a Large Language Model",
-    "doi": null,
-    "arxivId": null,
-    "authors": [
-      "Lindsey J et al"
-    ],
-    "journal": "Transformer Circuits",
-    "publicationYear": 2025,
-    "researchArea": [
-      "Interpretability"
-    ],
-    "reproductionStatus": "In Progress",
-    "priority": "P2",
-    "abstractUrl": "https://transformer-circuits.pub/2025/attribution-graphs/biology.html",
-    "pdfUrl": null,
-    "repository": null,
-    "attributionText": "Lindsey J et al. (2025). On the Biology of a Large Language Model. Transformer Circuits",
-    "notes": "Mechanistic interpretability research"
-  },
-  {
-    "id": 2,
-    "title": "Tracing the thoughts of a large language model",
-    "doi": null,
-    "arxivId": null,
-    "authors": [
-      "Anthropic Team"
-    ],
-    "journal": "Anthropic",
-    "publicationYear": 2025,
-    "researchArea": [
-      "Interpretability"
-    ],
-    "reproductionStatus": "Triaged",
-    "priority": "P2",
-    "abstractUrl": "https://www.anthropic.com/research/tracing-thoughts-language-model",
-    "pdfUrl": null,
-    "repository": null,
-    "attributionText": "Anthropic Team. (2025). Tracing the thoughts of a large language model. Anthropic Research",
-    "notes": "Monitor for opportunities"
-  },
-  {
-    "id": 3,
-    "title": "Agentic RAG with uncertainty routing",
-    "doi": "10.48550/arXiv.2501.01234",
-    "arxivId": null,
-    "authors": [
-      "Lee S",
-      "Patel R"
-    ],
-    "journal": "arXiv",
-    "publicationYear": 2025,
-    "researchArea": [
-      "RAG Systems"
-    ],
-    "reproductionStatus": "Triaged",
-    "priority": "P2",
-    "abstractUrl": "https://arxiv.org/abs/2501.01234",
-    "pdfUrl": "https://arxiv.org/pdf/2501.01234.pdf",
-    "repository": null,
-    "attributionText": "Lee S & Patel R. (2025). Agentic RAG with uncertainty routing. arXiv:2501.01234",
-    "notes": "Wait for code release"
-  },
-  {
-    "id": 4,
     "title": "XAttention: Block Sparse Attention with Antidiagonal Scoring",
     "doi": "10.48550/arXiv.2503.16428",
     "arxivId": null,
@@ -90,27 +26,90 @@
     "notes": "High priority reproduction target"
   },
   {
-    "id": 5,
-    "title": "Effective Prompt Extraction from Language Models",
-    "doi": "10.48550/arXiv.2307.06865",
+    "id": 2,
+    "title": "Agentic RAG with uncertainty routing",
+    "doi": "10.48550/arXiv.2501.01234",
     "arxivId": null,
     "authors": [
-      "Yiming Zhang",
-      "Nicholas Carlini",
-      "Daphne Ippolito"
+      "Lee S",
+      "Patel R"
     ],
-    "journal": "",
+    "journal": "arXiv",
+    "publicationYear": 2025,
+    "researchArea": [
+      "RAG Systems"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P2",
+    "abstractUrl": "https://arxiv.org/abs/2501.01234",
+    "pdfUrl": "https://arxiv.org/pdf/2501.01234.pdf",
+    "repository": null,
+    "attributionText": "Lee S & Patel R. (2025). Agentic RAG with uncertainty routing. arXiv:2501.01234",
+    "notes": "Wait for code release"
+  },
+  {
+    "id": 3,
+    "title": "Tracing the thoughts of a large language model",
+    "doi": null,
+    "arxivId": null,
+    "authors": [
+      "Anthropic Team"
+    ],
+    "journal": "Anthropic",
+    "publicationYear": 2025,
+    "researchArea": [
+      "Interpretability"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P2",
+    "abstractUrl": "https://www.anthropic.com/research/tracing-thoughts-language-model",
+    "pdfUrl": null,
+    "repository": null,
+    "attributionText": "Anthropic Team. (2025). Tracing the thoughts of a large language model. Anthropic Research",
+    "notes": "Monitor for opportunities"
+  },
+  {
+    "id": 4,
+    "title": "On the Biology of a Large Language Model",
+    "doi": null,
+    "arxivId": null,
+    "authors": [
+      "Lindsey J et al"
+    ],
+    "journal": "Transformer Circuits",
+    "publicationYear": 2025,
+    "researchArea": [
+      "Interpretability"
+    ],
+    "reproductionStatus": "In Progress",
+    "priority": "P2",
+    "abstractUrl": "https://transformer-circuits.pub/2025/attribution-graphs/biology.html",
+    "pdfUrl": null,
+    "repository": null,
+    "attributionText": "Lindsey J et al. (2025). On the Biology of a Large Language Model. Transformer Circuits",
+    "notes": "Mechanistic interpretability research"
+  },
+  {
+    "id": 5,
+    "title": "Scaling-efficient finetuning with sparse adapters",
+    "doi": "10.48550/arXiv.2406.12345",
+    "arxivId": null,
+    "authors": [
+      "Doe J",
+      "Smith A"
+    ],
+    "journal": "NeurIPS",
     "publicationYear": 2024,
     "researchArea": [
-      "Security"
+      "Efficient Training"
     ],
     "reproductionStatus": "Triaged",
     "priority": "P0",
-    "abstractUrl": null,
-    "pdfUrl": "https://arxiv.org/abs/2307.06865v3",
-    "repository": "https://github.com/y0mingzhang/prompt-extraction",
-    "attributionText": "",
-    "notes": ""
+    "abstractUrl": "https://arxiv.org/abs/2406.12345",
+    "pdfUrl": "https://arxiv.org/pdf/2406.12345.pdf",
+    "repository": "https://github.com/example/sparse-adapters",
+    "attributionText": "Doe J & Smith A. (2024). Scaling-efficient finetuning with sparse adapters. NeurIPS 2024",
+    "notes": "Cost reduction aligned"
   },
   {
     "id": 6,
@@ -135,24 +134,25 @@
   },
   {
     "id": 7,
-    "title": "Scaling-efficient finetuning with sparse adapters",
-    "doi": "10.48550/arXiv.2406.12345",
+    "title": "Effective Prompt Extraction from Language Models",
+    "doi": "10.48550/arXiv.2307.06865",
     "arxivId": null,
     "authors": [
-      "Doe J",
-      "Smith A"
+      "Yiming Zhang",
+      "Nicholas Carlini",
+      "Daphne Ippolito"
     ],
-    "journal": "NeurIPS",
+    "journal": "",
     "publicationYear": 2024,
     "researchArea": [
-      "Efficient Training"
+      "Security"
     ],
     "reproductionStatus": "Triaged",
     "priority": "P0",
-    "abstractUrl": "https://arxiv.org/abs/2406.12345",
-    "pdfUrl": "https://arxiv.org/pdf/2406.12345.pdf",
-    "repository": "https://github.com/example/sparse-adapters",
-    "attributionText": "Doe J & Smith A. (2024). Scaling-efficient finetuning with sparse adapters. NeurIPS 2024",
-    "notes": "Cost reduction aligned"
+    "abstractUrl": null,
+    "pdfUrl": "https://arxiv.org/abs/2307.06865v3",
+    "repository": "https://github.com/y0mingzhang/prompt-extraction",
+    "attributionText": "",
+    "notes": ""
   }
 ]
