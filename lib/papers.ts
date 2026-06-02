@@ -71,20 +71,11 @@ export const priorityColors: Record<string, string> = {
 }
 
 export const researchAreaColors: Record<string, string> = {
-  'attention mechanisms': '#4299e1',
-  'Attention Mechanisms': '#4299e1',
-  'efficient training': '#48bb78',
-  'Efficient Training': '#48bb78',
-  'rag systems': '#ed8936',
-  'RAG Systems': '#ed8936',
-  'multimodal': '#f56565',
-  'Multimodal': '#f56565',
-  'interpretability': '#9f7aea',
-  'Interpretability': '#9f7aea',
-  'optimization': '#38b2ac',
-  'Optimization': '#38b2ac',
-  'security': '#f56565',
-  'Security': '#f56565',
+  'Harness Engineering': '#4299e1',
+  'Agent Architectures': '#ecc94b',
+  'Agent Evaluation': '#9f7aea',
+  'Model Efficiency': '#48bb78',
+  'Interpretability & Safety': '#f56565',
 }
 
 export function getFocusAreaColor(area: string): string {
