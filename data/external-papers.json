@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Harness-Bench: Measuring Harness Effects across Models in Realistic Agent Workflows",
-    "doi": null,
+    "doi": "10.48550/arXiv.2605.27922",
     "arxivId": null,
     "authors": [
       "Yilun Yao",
@@ -35,7 +35,7 @@
   {
     "id": 2,
     "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses",
-    "doi": null,
+    "doi": "10.48550/arXiv.2604.25850",
     "arxivId": null,
     "authors": [
       "Jiahang Lin",
@@ -64,7 +64,7 @@
   {
     "id": 3,
     "title": "Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation",
-    "doi": null,
+    "doi": "10.48550/arXiv.2510.11977",
     "arxivId": null,
     "authors": [
       "Sayash Kapoor",
@@ -130,28 +130,6 @@
   },
   {
     "id": 6,
-    "title": "Agentic RAG with uncertainty routing",
-    "doi": "10.48550/arXiv.2501.01234",
-    "arxivId": null,
-    "authors": [
-      "Lee S",
-      "Patel R"
-    ],
-    "journal": "arXiv",
-    "publicationYear": 2025,
-    "researchArea": [
-      "RAG Systems"
-    ],
-    "reproductionStatus": "Triaged",
-    "priority": "P2",
-    "abstractUrl": "https://arxiv.org/abs/2501.01234",
-    "pdfUrl": "https://arxiv.org/pdf/2501.01234.pdf",
-    "repository": null,
-    "attributionText": "Lee S & Patel R. (2025). Agentic RAG with uncertainty routing. arXiv:2501.01234",
-    "notes": "Wait for code release"
-  },
-  {
-    "id": 7,
     "title": "XAttention: Block Sparse Attention with Antidiagonal Scoring",
     "doi": "10.48550/arXiv.2503.16428",
     "arxivId": null,
@@ -177,7 +155,7 @@
     "notes": "High priority reproduction target"
   },
   {
-    "id": 8,
+    "id": 7,
     "title": "Effective Prompt Extraction from Language Models",
     "doi": "10.48550/arXiv.2307.06865",
     "arxivId": null,
@@ -186,66 +164,23 @@
       "Nicholas Carlini",
       "Daphne Ippolito"
     ],
-    "journal": "",
+    "journal": "COLM 2024",
     "publicationYear": 2024,
     "researchArea": [
       "Security"
     ],
     "reproductionStatus": "Triaged",
     "priority": "P0",
-    "abstractUrl": null,
-    "pdfUrl": "https://arxiv.org/abs/2307.06865v3",
+    "abstractUrl": "https://arxiv.org/abs/2307.06865",
+    "pdfUrl": "https://arxiv.org/pdf/2307.06865",
     "repository": "https://github.com/y0mingzhang/prompt-extraction",
-    "attributionText": "",
-    "notes": ""
+    "attributionText": "Zhang Y, Carlini N, Ippolito D. (2024). Effective Prompt Extraction from Language Models. COLM 2024. arXiv:2307.06865",
+    "notes": "Prompt-extraction attack framework across 11 LLMs; relevant to agent/harness security (system-prompt and tool-description leakage)."
   },
   {
-    "id": 9,
-    "title": "Multimodal pretraining for medical imaging",
-    "doi": "10.48550/arXiv.2312.22222",
-    "arxivId": null,
-    "authors": [
-      "Zhang L et al"
-    ],
-    "journal": "ICLR",
-    "publicationYear": 2024,
-    "researchArea": [
-      "Multimodal"
-    ],
-    "reproductionStatus": "Triaged",
-    "priority": "P3",
-    "abstractUrl": "https://arxiv.org/abs/2312.22222",
-    "pdfUrl": "https://arxiv.org/pdf/2312.22222.pdf",
-    "repository": null,
-    "attributionText": "Zhang L et al. (2024). Multimodal pretraining for medical imaging. ICLR 2024",
-    "notes": "Out of scope - privacy concerns"
-  },
-  {
-    "id": 10,
-    "title": "Scaling-efficient finetuning with sparse adapters",
-    "doi": "10.48550/arXiv.2406.12345",
-    "arxivId": null,
-    "authors": [
-      "Doe J",
-      "Smith A"
-    ],
-    "journal": "NeurIPS",
-    "publicationYear": 2024,
-    "researchArea": [
-      "Efficient Training"
-    ],
-    "reproductionStatus": "Triaged",
-    "priority": "P0",
-    "abstractUrl": "https://arxiv.org/abs/2406.12345",
-    "pdfUrl": "https://arxiv.org/pdf/2406.12345.pdf",
-    "repository": "https://github.com/example/sparse-adapters",
-    "attributionText": "Doe J & Smith A. (2024). Scaling-efficient finetuning with sparse adapters. NeurIPS 2024",
-    "notes": "Cost reduction aligned"
-  },
-  {
-    "id": 11,
+    "id": 8,
     "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
-    "doi": null,
+    "doi": "10.48550/arXiv.2310.06770",
     "arxivId": null,
     "authors": [
       "Carlos E. Jimenez",
@@ -270,9 +205,9 @@
     "notes": "Canonical agentic coding evaluation harness (2,294 real GitHub issues). Reproduction target for agent evaluation infrastructure."
   },
   {
-    "id": 12,
+    "id": 9,
     "title": "Cognitive Architectures for Language Agents (CoALA)",
-    "doi": null,
+    "doi": "10.48550/arXiv.2309.02427",
     "arxivId": null,
     "authors": [
       "Theodore R. Sumers",
@@ -294,9 +229,9 @@
     "notes": "Framework connecting modern LLM agents to classical cognitive architectures (SOAR/ACT-R). Best reference for the agentic-systems lineage; reading/reference rather than code reproduction."
   },
   {
-    "id": 13,
+    "id": 10,
     "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
-    "doi": null,
+    "doi": "10.48550/arXiv.2210.03629",
     "arxivId": null,
     "authors": [
       "Shunyu Yao",
@@ -321,9 +256,9 @@
     "notes": "Foundational Think-Act-Observe (TAO) loop for LLM agents; the primitive the building-agents curriculum is built on. Baseline reproduction target."
   },
   {
-    "id": 14,
+    "id": 11,
     "title": "Inner Monologue: Embodied Reasoning through Planning with Language Models",
-    "doi": null,
+    "doi": "10.48550/arXiv.2207.05608",
     "arxivId": null,
     "authors": [
       "Wenlong Huang",
