@@ -1,6 +1,93 @@
 [
   {
     "id": 1,
+    "title": "Harness-Bench: Measuring Harness Effects across Models in Realistic Agent Workflows",
+    "doi": null,
+    "arxivId": null,
+    "authors": [
+      "Yilun Yao",
+      "Xinyu Tan",
+      "Chao-Hsuan Liu",
+      "Yaoming Li",
+      "Zhengyang Wang",
+      "Wenhan Yu",
+      "Zhewen Tan",
+      "Yuxuan Tian",
+      "Guangxiang Zhao",
+      "Lin Sun",
+      "Xiangzheng Zhang",
+      "Tong Yang"
+    ],
+    "journal": "arXiv preprint (2026)",
+    "publicationYear": 2026,
+    "researchArea": [
+      "Harness Engineering",
+      "Agent Evaluation"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P0",
+    "abstractUrl": "https://arxiv.org/abs/2605.27922",
+    "pdfUrl": "https://arxiv.org/pdf/2605.27922",
+    "repository": null,
+    "attributionText": "Yao et al., 2026",
+    "notes": "Operationalizes 'Agent = Model + Harness' by evaluating 6 harnesses x 8 models on 106 tasks. Directly encodes AJL's core thesis; recommends reporting model-harness pairs."
+  },
+  {
+    "id": 2,
+    "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses",
+    "doi": null,
+    "arxivId": null,
+    "authors": [
+      "Jiahang Lin",
+      "Shichun Liu",
+      "Chengjun Pan",
+      "Lizhi Lin",
+      "Shihan Dou",
+      "Xuanjing Huang",
+      "Hang Yan",
+      "Zhenhua Han",
+      "Tao Gui"
+    ],
+    "journal": "arXiv preprint (2026)",
+    "publicationYear": 2026,
+    "researchArea": [
+      "Harness Engineering"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P0",
+    "abstractUrl": "https://arxiv.org/abs/2604.25850",
+    "pdfUrl": "https://arxiv.org/pdf/2604.25850",
+    "repository": "https://github.com/china-qijizhifeng/agentic-harness-engineering",
+    "attributionText": "Lin et al., 2026",
+    "notes": "Self-evolving harness (tools/middleware/memory/prompts) via observability; lifts Terminal-Bench 2 69.7 -> 77.0% with cross-model transfer. Open code; directly reproducible on the building-agents stack."
+  },
+  {
+    "id": 3,
+    "title": "Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation",
+    "doi": null,
+    "arxivId": null,
+    "authors": [
+      "Sayash Kapoor",
+      "Benedikt Stroebl",
+      "Peter Kirgis",
+      "et al."
+    ],
+    "journal": "arXiv preprint (2025)",
+    "publicationYear": 2025,
+    "researchArea": [
+      "Agent Evaluation",
+      "Harness Engineering"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P0",
+    "abstractUrl": "https://arxiv.org/abs/2510.11977",
+    "pdfUrl": "https://arxiv.org/pdf/2510.11977",
+    "repository": "https://github.com/princeton-pli/hal-harness",
+    "attributionText": "Kapoor, Stroebl, Kirgis et al., 2025",
+    "notes": "Standardized eval harness across models x scaffolds x benchmarks; 21,730 rollouts and 2.5B tokens of released logs. Most reproducible target (open harness + logs)."
+  },
+  {
+    "id": 4,
     "title": "On the Biology of a Large Language Model",
     "doi": null,
     "arxivId": null,
@@ -12,7 +99,7 @@
     "researchArea": [
       "Interpretability"
     ],
-    "reproductionStatus": "In Progress",
+    "reproductionStatus": "Triaged",
     "priority": "P2",
     "abstractUrl": "https://transformer-circuits.pub/2025/attribution-graphs/biology.html",
     "pdfUrl": null,
@@ -21,7 +108,7 @@
     "notes": "Mechanistic interpretability research"
   },
   {
-    "id": 2,
+    "id": 5,
     "title": "Tracing the thoughts of a large language model",
     "doi": null,
     "arxivId": null,
@@ -42,7 +129,7 @@
     "notes": "Monitor for opportunities"
   },
   {
-    "id": 3,
+    "id": 6,
     "title": "Agentic RAG with uncertainty routing",
     "doi": "10.48550/arXiv.2501.01234",
     "arxivId": null,
@@ -64,7 +151,7 @@
     "notes": "Wait for code release"
   },
   {
-    "id": 4,
+    "id": 7,
     "title": "XAttention: Block Sparse Attention with Antidiagonal Scoring",
     "doi": "10.48550/arXiv.2503.16428",
     "arxivId": null,
@@ -81,7 +168,7 @@
       "Attention Mechanisms",
       "Efficient Training"
     ],
-    "reproductionStatus": "In Progress",
+    "reproductionStatus": "Triaged",
     "priority": "P0",
     "abstractUrl": "https://arxiv.org/abs/2503.16428",
     "pdfUrl": "https://arxiv.org/pdf/2503.16428.pdf",
@@ -90,7 +177,7 @@
     "notes": "High priority reproduction target"
   },
   {
-    "id": 5,
+    "id": 8,
     "title": "Effective Prompt Extraction from Language Models",
     "doi": "10.48550/arXiv.2307.06865",
     "arxivId": null,
@@ -113,7 +200,7 @@
     "notes": ""
   },
   {
-    "id": 6,
+    "id": 9,
     "title": "Multimodal pretraining for medical imaging",
     "doi": "10.48550/arXiv.2312.22222",
     "arxivId": null,
@@ -134,7 +221,7 @@
     "notes": "Out of scope - privacy concerns"
   },
   {
-    "id": 7,
+    "id": 10,
     "title": "Scaling-efficient finetuning with sparse adapters",
     "doi": "10.48550/arXiv.2406.12345",
     "arxivId": null,
@@ -154,5 +241,120 @@
     "repository": "https://github.com/example/sparse-adapters",
     "attributionText": "Doe J & Smith A. (2024). Scaling-efficient finetuning with sparse adapters. NeurIPS 2024",
     "notes": "Cost reduction aligned"
+  },
+  {
+    "id": 11,
+    "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+    "doi": null,
+    "arxivId": null,
+    "authors": [
+      "Carlos E. Jimenez",
+      "John Yang",
+      "Alexander Wettig",
+      "Shunyu Yao",
+      "Kexin Pei",
+      "Ofir Press",
+      "Karthik Narasimhan"
+    ],
+    "journal": "ICLR 2024",
+    "publicationYear": 2023,
+    "researchArea": [
+      "Agent Evaluation"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P2",
+    "abstractUrl": "https://arxiv.org/abs/2310.06770",
+    "pdfUrl": "https://arxiv.org/pdf/2310.06770",
+    "repository": "https://github.com/swe-bench/SWE-bench",
+    "attributionText": "Jimenez et al., ICLR 2024",
+    "notes": "Canonical agentic coding evaluation harness (2,294 real GitHub issues). Reproduction target for agent evaluation infrastructure."
+  },
+  {
+    "id": 12,
+    "title": "Cognitive Architectures for Language Agents (CoALA)",
+    "doi": null,
+    "arxivId": null,
+    "authors": [
+      "Theodore R. Sumers",
+      "Shunyu Yao",
+      "Karthik Narasimhan",
+      "Thomas L. Griffiths"
+    ],
+    "journal": "TMLR 2024",
+    "publicationYear": 2023,
+    "researchArea": [
+      "Agent Architectures"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P3",
+    "abstractUrl": "https://arxiv.org/abs/2309.02427",
+    "pdfUrl": "https://arxiv.org/pdf/2309.02427",
+    "repository": "https://github.com/ysymyth/awesome-language-agents",
+    "attributionText": "Sumers et al., TMLR 2024",
+    "notes": "Framework connecting modern LLM agents to classical cognitive architectures (SOAR/ACT-R). Best reference for the agentic-systems lineage; reading/reference rather than code reproduction."
+  },
+  {
+    "id": 13,
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "doi": null,
+    "arxivId": null,
+    "authors": [
+      "Shunyu Yao",
+      "Jeffrey Zhao",
+      "Dian Yu",
+      "Nan Du",
+      "Izhak Shafran",
+      "Karthik Narasimhan",
+      "Yuan Cao"
+    ],
+    "journal": "ICLR 2023",
+    "publicationYear": 2022,
+    "researchArea": [
+      "Reasoning + Acting"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P2",
+    "abstractUrl": "https://arxiv.org/abs/2210.03629",
+    "pdfUrl": "https://arxiv.org/pdf/2210.03629",
+    "repository": "https://github.com/ysymyth/ReAct",
+    "attributionText": "Yao et al., ICLR 2023",
+    "notes": "Foundational Think-Act-Observe (TAO) loop for LLM agents; the primitive the building-agents curriculum is built on. Baseline reproduction target."
+  },
+  {
+    "id": 14,
+    "title": "Inner Monologue: Embodied Reasoning through Planning with Language Models",
+    "doi": null,
+    "arxivId": null,
+    "authors": [
+      "Wenlong Huang",
+      "Fei Xia",
+      "Ted Xiao",
+      "Harris Chan",
+      "Jacky Liang",
+      "Pete Florence",
+      "Andy Zeng",
+      "Jonathan Tompson",
+      "Igor Mordatch",
+      "Yevgen Chebotar",
+      "Pierre Sermanet",
+      "Noah Brown",
+      "Tomas Jackson",
+      "Linda Luu",
+      "Sergey Levine",
+      "Karol Hausman",
+      "Brian Ichter"
+    ],
+    "journal": "CoRL 2022",
+    "publicationYear": 2022,
+    "researchArea": [
+      "Reasoning + Acting"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P3",
+    "abstractUrl": "https://arxiv.org/abs/2207.05608",
+    "pdfUrl": "https://arxiv.org/pdf/2207.05608",
+    "repository": "https://innermonologue.github.io",
+    "attributionText": "Huang et al., CoRL 2022",
+    "notes": "Closed-loop environment-feedback ('observe') precursor to ReAct, in robotics. Conceptual reference for the origin of the observe step."
   }
 ]
