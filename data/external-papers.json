@@ -178,6 +178,126 @@
   },
   {
     "id": 8,
+    "title": "Plan4MC: Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks",
+    "doi": "10.48550/arXiv.2303.16563",
+    "arxivId": null,
+    "authors": [
+      "Haoqi Yuan",
+      "Chi Zhang",
+      "Hongcheng Wang",
+      "Feiyang Xie",
+      "Penglin Cai",
+      "Hao Dong",
+      "Zongqing Lu"
+    ],
+    "journal": "NeurIPS 2023 FMDM Workshop",
+    "publicationYear": 2023,
+    "researchArea": [
+      "Agent Architectures"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P3",
+    "abstractUrl": "https://arxiv.org/abs/2303.16563",
+    "pdfUrl": "https://arxiv.org/pdf/2303.16563",
+    "repository": "https://sites.google.com/view/plan4mc",
+    "attributionText": "Yuan et al., 2023",
+    "notes": "Hybrid: RL learns basic skills, LLM builds a skill graph to plan over them. 40 tasks, many requiring >10 sequential skills; strong sample efficiency. Bridges the RL and LLM-agent camps. Open code."
+  },
+  {
+    "id": 9,
+    "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+    "doi": "10.48550/arXiv.2305.16291",
+    "arxivId": null,
+    "authors": [
+      "Guanzhi Wang",
+      "Yuqi Xie",
+      "Yunfan Jiang",
+      "Ajay Mandlekar",
+      "Chaowei Xiao",
+      "Yuke Zhu",
+      "Linxi Fan",
+      "Anima Anandkumar"
+    ],
+    "journal": "arXiv (2023)",
+    "publicationYear": 2023,
+    "researchArea": [
+      "Agent Architectures"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P0",
+    "abstractUrl": "https://arxiv.org/abs/2305.16291",
+    "pdfUrl": "https://arxiv.org/pdf/2305.16291",
+    "repository": "https://github.com/MineDojo/Voyager",
+    "attributionText": "Wang et al., 2023",
+    "notes": "Flagship LLM lifelong-learning agent in Minecraft: automatic curriculum + ever-growing code skill library + iterative prompting loop with self-verification. Black-box GPT-4, no fine-tuning. Maps directly onto building-agents (memory/loop/self-verification). Open code."
+  },
+  {
+    "id": 10,
+    "title": "JARVIS-1: Open-World Multi-task Agents with Memory-Augmented Multimodal Language Models",
+    "doi": "10.48550/arXiv.2311.05997",
+    "arxivId": null,
+    "authors": [
+      "Zihao Wang",
+      "Shaofei Cai",
+      "Anji Liu",
+      "Yonggang Jin",
+      "Jinbing Hou",
+      "Bowei Zhang",
+      "Haowei Lin",
+      "Zhaofeng He",
+      "Zilong Zheng",
+      "Yaodong Yang",
+      "Xiaojian Ma",
+      "Yitao Liang"
+    ],
+    "journal": "arXiv (2023)",
+    "publicationYear": 2023,
+    "researchArea": [
+      "Agent Architectures"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P2",
+    "abstractUrl": "https://arxiv.org/abs/2311.05997",
+    "pdfUrl": "https://arxiv.org/pdf/2311.05997",
+    "repository": "https://craftjarvis.org/JARVIS-1",
+    "attributionText": "Wang et al., 2023",
+    "notes": "Memory-augmented multimodal agent: perceives visual input + instructions, plans, and performs embodied control. 200+ tasks; 5x reliability on ObtainDiamondPickaxe. Successor line to GITM. Open code."
+  },
+  {
+    "id": 11,
+    "title": "Ghost in the Minecraft (GITM): Generally Capable Agents via LLMs with Text-based Knowledge and Memory",
+    "doi": "10.48550/arXiv.2305.17144",
+    "arxivId": null,
+    "authors": [
+      "Xizhou Zhu",
+      "Yuntao Chen",
+      "Hao Tian",
+      "Chenxin Tao",
+      "Weijie Su",
+      "Chenyu Yang",
+      "Gao Huang",
+      "Bin Li",
+      "Lewei Lu",
+      "Xiaogang Wang",
+      "Yu Qiao",
+      "Zhaoxiang Zhang",
+      "Jifeng Dai"
+    ],
+    "journal": "arXiv (2023)",
+    "publicationYear": 2023,
+    "researchArea": [
+      "Agent Architectures"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P2",
+    "abstractUrl": "https://arxiv.org/abs/2305.17144",
+    "pdfUrl": "https://arxiv.org/pdf/2305.17144",
+    "repository": "https://github.com/OpenGVLab/GITM",
+    "attributionText": "Zhu et al., 2023",
+    "notes": "Hierarchical LLM agent (goal -> sub-goal -> action) with text knowledge + memory. Unlocks 100% of Overworld tech tree, +47.5% on ObtainDiamond, ~10,000x more compute-efficient than VPT/DreamerV3. Open code."
+  },
+  {
+    "id": 12,
     "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
     "doi": "10.48550/arXiv.2310.06770",
     "arxivId": null,
@@ -204,7 +324,7 @@
     "notes": "Canonical agentic coding evaluation harness (2,294 real GitHub issues). Reproduction target for agent evaluation infrastructure."
   },
   {
-    "id": 9,
+    "id": 13,
     "title": "Cognitive Architectures for Language Agents (CoALA)",
     "doi": "10.48550/arXiv.2309.02427",
     "arxivId": null,
@@ -228,7 +348,37 @@
     "notes": "Framework connecting modern LLM agents to classical cognitive architectures (SOAR/ACT-R). Best reference for the agentic-systems lineage; reading/reference rather than code reproduction."
   },
   {
-    "id": 10,
+    "id": 14,
+    "title": "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge",
+    "doi": "10.48550/arXiv.2206.08853",
+    "arxivId": null,
+    "authors": [
+      "Linxi Fan",
+      "Guanzhi Wang",
+      "Yunfan Jiang",
+      "Ajay Mandlekar",
+      "Yuncong Yang",
+      "Haoyi Zhu",
+      "Andrew Tang",
+      "De-An Huang",
+      "Yuke Zhu",
+      "Anima Anandkumar"
+    ],
+    "journal": "NeurIPS 2022 (Outstanding Paper)",
+    "publicationYear": 2022,
+    "researchArea": [
+      "Agent Evaluation"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P0",
+    "abstractUrl": "https://arxiv.org/abs/2206.08853",
+    "pdfUrl": "https://arxiv.org/pdf/2206.08853",
+    "repository": "https://github.com/MineDojo/MineDojo",
+    "attributionText": "Fan et al., NeurIPS 2022",
+    "notes": "Foundational Minecraft benchmark + simulator: 1000s of open-ended tasks, internet-scale knowledge base (videos/wiki/forums), and the MineCLIP learned reward. The environment most Minecraft agents (incl. Voyager) run in. Open source."
+  },
+  {
+    "id": 15,
     "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
     "doi": "10.48550/arXiv.2210.03629",
     "arxivId": null,
@@ -255,7 +405,7 @@
     "notes": "Foundational Think-Act-Observe (TAO) loop for LLM agents; the primitive the building-agents curriculum is built on. Baseline reproduction target."
   },
   {
-    "id": 11,
+    "id": 16,
     "title": "Inner Monologue: Embodied Reasoning through Planning with Language Models",
     "doi": "10.48550/arXiv.2207.05608",
     "arxivId": null,
