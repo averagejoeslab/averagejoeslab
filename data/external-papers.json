@@ -97,7 +97,7 @@
     "journal": "Transformer Circuits",
     "publicationYear": 2025,
     "researchArea": [
-      "Interpretability"
+      "Interpretability & Safety"
     ],
     "reproductionStatus": "Triaged",
     "priority": "P2",
@@ -118,7 +118,7 @@
     "journal": "Anthropic",
     "publicationYear": 2025,
     "researchArea": [
-      "Interpretability"
+      "Interpretability & Safety"
     ],
     "reproductionStatus": "Triaged",
     "priority": "P2",
@@ -143,8 +143,7 @@
     "journal": "arXiv",
     "publicationYear": 2025,
     "researchArea": [
-      "Attention Mechanisms",
-      "Efficient Training"
+      "Model Efficiency"
     ],
     "reproductionStatus": "Triaged",
     "priority": "P0",
@@ -167,7 +166,7 @@
     "journal": "COLM 2024",
     "publicationYear": 2024,
     "researchArea": [
-      "Security"
+      "Interpretability & Safety"
     ],
     "reproductionStatus": "Triaged",
     "priority": "P0",
@@ -245,7 +244,7 @@
     "journal": "ICLR 2023",
     "publicationYear": 2022,
     "researchArea": [
-      "Reasoning + Acting"
+      "Agent Architectures"
     ],
     "reproductionStatus": "Triaged",
     "priority": "P2",
@@ -282,7 +281,7 @@
     "journal": "CoRL 2022",
     "publicationYear": 2022,
     "researchArea": [
-      "Reasoning + Acting"
+      "Agent Architectures"
     ],
     "reproductionStatus": "Triaged",
     "priority": "P3",
