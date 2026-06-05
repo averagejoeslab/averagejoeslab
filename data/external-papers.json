@@ -571,5 +571,48 @@
     "repository": "https://innermonologue.github.io",
     "attributionText": "Huang et al., CoRL 2022",
     "notes": "Closed-loop environment-feedback ('observe') precursor to ReAct, in robotics. Conceptual reference for the origin of the observe step."
+  },
+  {
+    "id": 22,
+    "title": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+    "doi": "10.1037/h0042519",
+    "arxivId": null,
+    "authors": [
+      "Frank Rosenblatt"
+    ],
+    "journal": "Psychological Review (1958)",
+    "publicationYear": 1958,
+    "researchArea": [
+      "Foundations"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P0",
+    "abstractUrl": "https://doi.org/10.1037/h0042519",
+    "pdfUrl": null,
+    "repository": null,
+    "attributionText": "Rosenblatt, Psychological Review, 65(6):386-408, 1958",
+    "notes": "Foundational. Takes the McCulloch-Pitts threshold neuron and adds adaptive weights + an error-driven learning rule, making it trainable from data -- the first precisely specified, trainable neural network and the birth of machine learning from neural models. Replication target: single-line Python perceptron predict + weight-update rule."
+  },
+  {
+    "id": 23,
+    "title": "A Logical Calculus of the Ideas Immanent in Nervous Activity",
+    "doi": "10.1007/BF02478259",
+    "arxivId": null,
+    "authors": [
+      "Warren S. McCulloch",
+      "Walter Pitts"
+    ],
+    "journal": "Bulletin of Mathematical Biophysics (1943)",
+    "publicationYear": 1943,
+    "researchArea": [
+      "Foundations"
+    ],
+    "reproductionStatus": "Triaged",
+    "priority": "P0",
+    "abstractUrl": "https://doi.org/10.1007/BF02478259",
+    "pdfUrl": null,
+    "repository": null,
+    "attributionText": "McCulloch & Pitts, Bulletin of Mathematical Biophysics, 5:115-133, 1943",
+    "notes": "Foundational. Models neurons as binary all-or-none threshold logic units and proves networks of them can compute any propositional/logical function -- the artificial neuron as a logic gate (fixed weights, no learning). Origin of the McCulloch-Pitts neuron; the direct ancestor of Rosenblatt's perceptron. Replication target: single-line Python threshold neuron."
   }
 ]
