@@ -77,6 +77,7 @@ export const researchAreaColors: Record<string, string> = {
   'Agent Evaluation': '#9f7aea',
   'Model Efficiency': '#48bb78',
   'Interpretability & Safety': '#f56565',
+  'Foundations': '#8d6e63',
 }
 
 export function getFocusAreaColor(area: string): string {
