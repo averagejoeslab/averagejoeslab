@@ -26,6 +26,7 @@ export type ExternalPaper = {
   abstractUrl: string | null
   pdfUrl: string | null
   repository: string | null
+  reproductionRepo: string | null
   attributionText: string
   notes: string
 }
