@@ -211,7 +211,9 @@ async function syncExternalPapersFromNotion() {
       const pdfUrl = properties.PDF_URL?.url || 
                     properties['PDF_URL']?.url || null;
       const repository = properties.Repository?.url || null;
-      
+      // Extract AJL replication repo (CSV: Reproduction_Repo) - our from-scratch reproduction
+      const reproductionRepo = properties.Reproduction_Repo?.url || null;
+
       // Extract attribution text (CSV: Attribution_Text)
       const attributionText = properties.Attribution_Text?.rich_text?.[0]?.plain_text || 
                              properties['Attribution_Text']?.rich_text?.[0]?.plain_text || '';
@@ -233,6 +235,7 @@ async function syncExternalPapersFromNotion() {
         abstractUrl: abstractUrl,        // CSV: Abstract_URL
         pdfUrl: pdfUrl,                 // CSV: PDF_URL
         repository: repository,          // CSV: Repository
+        reproductionRepo: reproductionRepo, // CSV: Reproduction_Repo (AJL replication)
         attributionText: attributionText, // CSV: Attribution_Text
         notes: notes                     // CSV: Notes
       };

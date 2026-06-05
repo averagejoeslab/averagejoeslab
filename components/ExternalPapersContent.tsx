@@ -192,6 +192,7 @@ export default function ExternalPapersContent({ papers }: Props) {
                   || (paper.doi?.trim() ? `https://doi.org/${paper.doi.trim()}` : null)
                 const pdfLink = paper.pdfUrl?.trim() || null
                 const codeLink = paper.repository?.trim() || null
+                const reproRepoLink = paper.reproductionRepo?.trim() || null
 
                 return (
                   <div key={paper.id} className="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-md transition-shadow">
@@ -285,7 +286,17 @@ export default function ExternalPapersContent({ papers }: Props) {
                           View Code
                         </a>
                       )}
-                      {!paperLink && !pdfLink && !codeLink && (
+                      {reproRepoLink && (
+                        <a
+                          href={reproRepoLink}
+                          className="text-sm font-medium text-white bg-slate-800 hover:bg-slate-900 px-3 py-1.5 rounded-lg transition-colors"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          AJL Replication
+                        </a>
+                      )}
+                      {!paperLink && !pdfLink && !codeLink && !reproRepoLink && (
                         <span className="text-sm text-slate-400">
                           Links will be available when processed
                         </span>
