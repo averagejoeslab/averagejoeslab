@@ -29,6 +29,7 @@
     "abstractUrl": "https://arxiv.org/abs/2605.27922",
     "pdfUrl": "https://arxiv.org/pdf/2605.27922",
     "repository": null,
+    "reproductionRepo": null,
     "attributionText": "Yao et al., 2026",
     "notes": "Operationalizes 'Agent = Model + Harness' by evaluating 6 harnesses x 8 models on 106 tasks. Directly encodes AJL's core thesis; recommends reporting model-harness pairs."
   },
@@ -58,6 +59,7 @@
     "abstractUrl": "https://arxiv.org/abs/2604.25850",
     "pdfUrl": "https://arxiv.org/pdf/2604.25850",
     "repository": "https://github.com/china-qijizhifeng/agentic-harness-engineering",
+    "reproductionRepo": null,
     "attributionText": "Lin et al., 2026",
     "notes": "Self-evolving harness (tools/middleware/memory/prompts) via observability; lifts Terminal-Bench 2 69.7 -> 77.0% with cross-model transfer. Open code; directly reproducible on the building-agents stack."
   },
@@ -83,6 +85,7 @@
     "abstractUrl": "https://arxiv.org/abs/2510.11977",
     "pdfUrl": "https://arxiv.org/pdf/2510.11977",
     "repository": "https://github.com/princeton-pli/hal-harness",
+    "reproductionRepo": null,
     "attributionText": "Kapoor, Stroebl, Kirgis et al., 2025",
     "notes": "Standardized eval harness across models x scaffolds x benchmarks; 21,730 rollouts and 2.5B tokens of released logs. Most reproducible target (open harness + logs)."
   },
@@ -104,6 +107,7 @@
     "abstractUrl": "https://transformer-circuits.pub/2025/attribution-graphs/biology.html",
     "pdfUrl": null,
     "repository": null,
+    "reproductionRepo": null,
     "attributionText": "Lindsey J et al. (2025). On the Biology of a Large Language Model. Transformer Circuits",
     "notes": "Mechanistic interpretability research"
   },
@@ -125,6 +129,7 @@
     "abstractUrl": "https://www.anthropic.com/research/tracing-thoughts-language-model",
     "pdfUrl": null,
     "repository": null,
+    "reproductionRepo": null,
     "attributionText": "Anthropic Team. (2025). Tracing the thoughts of a large language model. Anthropic Research",
     "notes": "Monitor for opportunities"
   },
@@ -150,6 +155,7 @@
     "abstractUrl": "https://arxiv.org/abs/2503.16428",
     "pdfUrl": "https://arxiv.org/pdf/2503.16428.pdf",
     "repository": "https://github.com/mit-han-lab/x-attention",
+    "reproductionRepo": null,
     "attributionText": "Xu R et al. (2025). XAttention: Block Sparse Attention with Antidiagonal Scoring. arXiv:2503.16428",
     "notes": "High priority reproduction target"
   },
@@ -177,6 +183,7 @@
     "abstractUrl": "https://arxiv.org/abs/2407.09450",
     "pdfUrl": "https://arxiv.org/pdf/2407.09450",
     "repository": null,
+    "reproductionRepo": null,
     "attributionText": "Fountas et al., ICLR 2025",
     "notes": "Human-inspired episodic memory: event segmentation via Bayesian surprise + two-stage (similarity + temporal-contiguity) retrieval; event boundaries align with human-perceived events. Most cognitively-grounded episodic mechanism -- key reference for the human-like memory project."
   },
@@ -200,6 +207,7 @@
     "abstractUrl": "https://arxiv.org/abs/2307.06865",
     "pdfUrl": "https://arxiv.org/pdf/2307.06865",
     "repository": "https://github.com/y0mingzhang/prompt-extraction",
+    "reproductionRepo": null,
     "attributionText": "Zhang Y, Carlini N, Ippolito D. (2024). Effective Prompt Extraction from Language Models. COLM 2024. arXiv:2307.06865",
     "notes": "Prompt-extraction attack framework across 11 LLMs; relevant to agent/harness security (system-prompt and tool-description leakage)."
   },
@@ -225,6 +233,7 @@
     "abstractUrl": "https://arxiv.org/abs/2305.10250",
     "pdfUrl": "https://arxiv.org/pdf/2305.10250",
     "repository": "https://github.com/zhongwanjun/MemoryBank-SiliconFriend",
+    "reproductionRepo": null,
     "attributionText": "Zhong et al., AAAI 2024",
     "notes": "Long-term memory with Ebbinghaus forgetting curve (time + relevance based updating), demoed via the SiliconFriend companion. Reference for human-like forgetting/decay in the memory system."
   },
@@ -251,6 +260,7 @@
     "abstractUrl": "https://arxiv.org/abs/2303.11366",
     "pdfUrl": "https://arxiv.org/pdf/2303.11366",
     "repository": "https://github.com/noahshinn/reflexion",
+    "reproductionRepo": null,
     "attributionText": "Shinn et al., NeurIPS 2023",
     "notes": "Verbal reinforcement learning: agent reflects on failures and stores episodic insights in memory for later attempts (91% pass@1 on HumanEval). Reference for episodic self-reflection memory."
   },
@@ -277,6 +287,7 @@
     "abstractUrl": "https://arxiv.org/abs/2304.03442",
     "pdfUrl": "https://arxiv.org/pdf/2304.03442",
     "repository": "https://github.com/joonspk-research/generative_agents",
+    "reproductionRepo": null,
     "attributionText": "Park et al., UIST 2023",
     "notes": "Canonical 'memory stream': observations stored with timestamp + importance + embedding, retrieved by recency + importance + relevance, plus reflection. Closest prior art to the nanoagent episodic-memory project -- differentiate against this."
   },
@@ -304,6 +315,7 @@
     "abstractUrl": "https://arxiv.org/abs/2310.08560",
     "pdfUrl": "https://arxiv.org/pdf/2310.08560",
     "repository": "https://memgpt.ai",
+    "reproductionRepo": null,
     "attributionText": "Packer et al., 2023",
     "notes": "Virtual context management / tiered memory (main context vs external store) with paging, inspired by OS memory hierarchy. Reference for the working-memory + retrieval layer of the nanoagent memory system."
   },
@@ -331,6 +343,7 @@
     "abstractUrl": "https://arxiv.org/abs/2303.16563",
     "pdfUrl": "https://arxiv.org/pdf/2303.16563",
     "repository": "https://sites.google.com/view/plan4mc",
+    "reproductionRepo": null,
     "attributionText": "Yuan et al., 2023",
     "notes": "Hybrid: RL learns basic skills, LLM builds a skill graph to plan over them. 40 tasks, many requiring >10 sequential skills; strong sample efficiency. Bridges the RL and LLM-agent camps. Open code."
   },
@@ -359,6 +372,7 @@
     "abstractUrl": "https://arxiv.org/abs/2305.16291",
     "pdfUrl": "https://arxiv.org/pdf/2305.16291",
     "repository": "https://github.com/MineDojo/Voyager",
+    "reproductionRepo": null,
     "attributionText": "Wang et al., 2023",
     "notes": "Flagship LLM lifelong-learning agent in Minecraft: automatic curriculum + ever-growing code skill library + iterative prompting loop with self-verification. Black-box GPT-4, no fine-tuning. Maps directly onto building-agents (memory/loop/self-verification). Open code."
   },
@@ -391,6 +405,7 @@
     "abstractUrl": "https://arxiv.org/abs/2311.05997",
     "pdfUrl": "https://arxiv.org/pdf/2311.05997",
     "repository": "https://craftjarvis.org/JARVIS-1",
+    "reproductionRepo": null,
     "attributionText": "Wang et al., 2023",
     "notes": "Memory-augmented multimodal agent: perceives visual input + instructions, plans, and performs embodied control. 200+ tasks; 5x reliability on ObtainDiamondPickaxe. Successor line to GITM. Open code."
   },
@@ -424,6 +439,7 @@
     "abstractUrl": "https://arxiv.org/abs/2305.17144",
     "pdfUrl": "https://arxiv.org/pdf/2305.17144",
     "repository": "https://github.com/OpenGVLab/GITM",
+    "reproductionRepo": null,
     "attributionText": "Zhu et al., 2023",
     "notes": "Hierarchical LLM agent (goal -> sub-goal -> action) with text knowledge + memory. Unlocks 100% of Overworld tech tree, +47.5% on ObtainDiamond, ~10,000x more compute-efficient than VPT/DreamerV3. Open code."
   },
@@ -451,6 +467,7 @@
     "abstractUrl": "https://arxiv.org/abs/2310.06770",
     "pdfUrl": "https://arxiv.org/pdf/2310.06770",
     "repository": "https://github.com/swe-bench/SWE-bench",
+    "reproductionRepo": null,
     "attributionText": "Jimenez et al., ICLR 2024",
     "notes": "Canonical agentic coding evaluation harness (2,294 real GitHub issues). Reproduction target for agent evaluation infrastructure."
   },
@@ -475,6 +492,7 @@
     "abstractUrl": "https://arxiv.org/abs/2309.02427",
     "pdfUrl": "https://arxiv.org/pdf/2309.02427",
     "repository": "https://github.com/ysymyth/awesome-language-agents",
+    "reproductionRepo": null,
     "attributionText": "Sumers et al., TMLR 2024",
     "notes": "Framework connecting modern LLM agents to classical cognitive architectures (SOAR/ACT-R). Best reference for the agentic-systems lineage; reading/reference rather than code reproduction."
   },
@@ -505,6 +523,7 @@
     "abstractUrl": "https://arxiv.org/abs/2206.08853",
     "pdfUrl": "https://arxiv.org/pdf/2206.08853",
     "repository": "https://github.com/MineDojo/MineDojo",
+    "reproductionRepo": null,
     "attributionText": "Fan et al., NeurIPS 2022",
     "notes": "Foundational Minecraft benchmark + simulator: 1000s of open-ended tasks, internet-scale knowledge base (videos/wiki/forums), and the MineCLIP learned reward. The environment most Minecraft agents (incl. Voyager) run in. Open source."
   },
@@ -532,6 +551,7 @@
     "abstractUrl": "https://arxiv.org/abs/2210.03629",
     "pdfUrl": "https://arxiv.org/pdf/2210.03629",
     "repository": "https://github.com/ysymyth/ReAct",
+    "reproductionRepo": null,
     "attributionText": "Yao et al., ICLR 2023",
     "notes": "Foundational Think-Act-Observe (TAO) loop for LLM agents; the primitive the building-agents curriculum is built on. Baseline reproduction target."
   },
@@ -569,6 +589,7 @@
     "abstractUrl": "https://arxiv.org/abs/2207.05608",
     "pdfUrl": "https://arxiv.org/pdf/2207.05608",
     "repository": "https://innermonologue.github.io",
+    "reproductionRepo": null,
     "attributionText": "Huang et al., CoRL 2022",
     "notes": "Closed-loop environment-feedback ('observe') precursor to ReAct, in robotics. Conceptual reference for the origin of the observe step."
   },
@@ -590,6 +611,7 @@
     "abstractUrl": "https://doi.org/10.1037/h0042519",
     "pdfUrl": null,
     "repository": null,
+    "reproductionRepo": null,
     "attributionText": "Rosenblatt, Psychological Review, 65(6):386-408, 1958",
     "notes": "Foundational. Takes the McCulloch-Pitts threshold neuron and adds adaptive weights + an error-driven learning rule, making it trainable from data -- the first precisely specified, trainable neural network and the birth of machine learning from neural models. Replication target: single-line Python perceptron predict + weight-update rule."
   },
@@ -612,6 +634,7 @@
     "abstractUrl": "https://doi.org/10.1007/BF02478259",
     "pdfUrl": null,
     "repository": null,
+    "reproductionRepo": "https://github.com/averagejoeslab/threshold-logic-unit",
     "attributionText": "McCulloch & Pitts, Bulletin of Mathematical Biophysics, 5:115-133, 1943",
     "notes": "Foundational. Models neurons as binary all-or-none threshold logic units and proves networks of them can compute any propositional/logical function -- the artificial neuron as a logic gate (fixed weights, no learning). Origin of the McCulloch-Pitts neuron; the direct ancestor of Rosenblatt's perceptron. Replication target: single-line Python threshold neuron."
   }
