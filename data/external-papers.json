@@ -634,7 +634,7 @@
     "abstractUrl": "https://doi.org/10.1007/BF02478259",
     "pdfUrl": null,
     "repository": null,
-    "reproductionRepo": "https://github.com/averagejoeslab/threshold-logic-unit",
+    "reproductionRepo": "https://github.com/averagejoeslab/linear-threshold-unit",
     "attributionText": "McCulloch & Pitts, Bulletin of Mathematical Biophysics, 5:115-133, 1943",
     "notes": "Foundational. Models neurons as binary all-or-none threshold logic units and proves networks of them can compute any propositional/logical function -- the artificial neuron as a logic gate (fixed weights, no learning). Origin of the McCulloch-Pitts neuron; the direct ancestor of Rosenblatt's perceptron. Replication target: single-line Python threshold neuron."
   }
