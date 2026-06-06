@@ -64,3 +64,14 @@ jobs:
           git add data/internal-papers.json data/external-papers.json
           git commit -m "Auto-sync papers from Notion database"
           git push
+
+      - name: Trigger site deploy
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # The auto-sync commit above is authored by GITHUB_TOKEN, whose pushes
+          # do NOT fire the deploy workflow's `push` trigger (loop prevention).
+          # repository_dispatch is the documented exception that DOES fire
+          # workflows from GITHUB_TOKEN, so the site rebuilds with the new data.
+          gh api "repos/${{ github.repository }}/dispatches" -f event_type=papers-updated

@@ -5,7 +5,7 @@ on:
     branches:
       - main
   repository_dispatch:
-    types: [blog-content-updated]
+    types: [blog-content-updated, papers-updated]
 
 permissions:
   contents: read
